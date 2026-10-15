@@ -46,3 +46,16 @@ NEXT_STEPS.md
 PROGRESS.md
 DECISIONS.md
 KNOWN_ISSUES.md
+
+# Generated FloodSight figures and maps
+docs/figures/bbox_upstream_check.png
+docs/figures/bridges_event_map.html
+docs/figures/bridges_event_map.png
+docs/figures/dashboard_final_1366.png
+docs/figures/dashboard_final_1920.png
+docs/figures/fig1_map.html
+docs/figures/judge_box.geojson
+docs/figures/judge_box_map.html
+docs/figures/judge_box_map.png
+docs/figures/phase3_s1_pair_check.png
+docs/figures/run_sh_verified.png
