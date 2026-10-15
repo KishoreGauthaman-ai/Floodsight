@@ -59,3 +59,12 @@ docs/figures/judge_box_map.html
 docs/figures/judge_box_map.png
 docs/figures/phase3_s1_pair_check.png
 docs/figures/run_sh_verified.png
+
+# Keep auxiliary report files locally, but exclude them from Git
+docs/report/bundle/
+docs/report/.gitkeep
+docs/report/pdf_content.txt
+docs/report/pdf_content_sources.txt
+docs/report/DESIGN.md
+docs/report/demo_script.md
+docs/report/trishuli_bbox_derivation.md
