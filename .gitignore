@@ -39,3 +39,10 @@ Thumbs.db
 # --- Round 5 final delivery ---
 # Playwright MCP browser artifacts (screenshots/console logs)
 .playwright-mcp/
+
+# Internal development notes - excluded from GitHub
+AGENT.md
+NEXT_STEPS.md
+PROGRESS.md
+DECISIONS.md
+KNOWN_ISSUES.md
