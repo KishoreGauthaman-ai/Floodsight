@@ -1,0 +1,16 @@
+# Streamlit runtime configuration for FloodSight (picked up automatically
+# because run.sh launches from the project root).
+[global]
+# production mode: disables development-mode warnings and hot-reload noise
+developmentMode = false
+
+[browser]
+# do not send usage statistics: removes the stats fetch (and its console/log
+# noise) on every load
+gatherUsageStats = false
+
+[server]
+headless = true
+# keep the websocket session alive across short network hiccups (tunnels)
+pingTimeout = 30
+maxMessageSize = 400

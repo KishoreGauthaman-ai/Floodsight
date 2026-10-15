@@ -1,0 +1,19 @@
+{
+  "bbox": [
+    84.39,
+    27.68,
+    85.73,
+    28.31
+  ],
+  "analysis_grid": "100 m over the bbox, masks evaluated at native 10 m",
+  "slope_max_deg": 30.0,
+  "slice5_raw_coverage_pct": 10.9,
+  "slice6_raw_coverage_pct": 89.0,
+  "raw_footprint_coverage_pct": 99.9,
+  "fail_no_radar_pct": 0.0,
+  "fail_dem_void_pct": 0.0,
+  "fail_layover_shadow_pct": 0.368,
+  "fail_slope_gt_30deg_pct": 43.85,
+  "analysed_area_pct": 55.7,
+  "note": "the pipeline's coverage_fraction is the analysed-area share after these reliability masks, not missing satellite data (DECISIONS D58)"
+}

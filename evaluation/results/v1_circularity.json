@@ -1,0 +1,85 @@
+{
+  "inventory": {
+    "event_stack": [
+      "2026-06-29",
+      "2026-07-11",
+      "2026-07-23",
+      "2026-08-04",
+      "2026-08-16"
+    ],
+    "event_post": "2026-08-28",
+    "control_a_pair": {
+      "pre": "2026-08-04",
+      "post": "2026-08-16"
+    },
+    "control_stack": [
+      "2026-06-29",
+      "2026-07-11",
+      "2026-07-23",
+      "2026-08-04"
+    ],
+    "control_post_in_control_stack": false,
+    "control_post_in_event_stack": true,
+    "note": "the control's post scene (08-16) is excluded from the CONTROL stack by design (D66) but is a legitimate member of the EVENT pre-event stack"
+  },
+  "domain_km2": 96.46,
+  "fixed_threshold_z": 4.679,
+  "leave_one_out": {
+    "2026-06-29": {
+      "stack": [
+        "2026-07-11",
+        "2026-07-23",
+        "2026-08-04"
+      ],
+      "area_km2": 0.1158,
+      "valid_domain_km2": 96.46
+    },
+    "2026-07-11": {
+      "stack": [
+        "2026-06-29",
+        "2026-07-23",
+        "2026-08-04"
+      ],
+      "area_km2": 0.1155,
+      "valid_domain_km2": 96.46
+    },
+    "2026-07-23": {
+      "stack": [
+        "2026-06-29",
+        "2026-07-11",
+        "2026-08-04"
+      ],
+      "area_km2": 0.1802,
+      "valid_domain_km2": 96.46
+    },
+    "2026-08-04": {
+      "stack": [
+        "2026-06-29",
+        "2026-07-11",
+        "2026-07-23"
+      ],
+      "area_km2": 0.1997,
+      "valid_domain_km2": 96.46
+    }
+  },
+  "control_d": {
+    "pair": "2026-06-29/07-11/07-23 stack -> post 2026-08-04",
+    "area_km2": 0.1481,
+    "valid_domain_km2": 96.46
+  },
+  "ratios": {
+    "event_km2": 0.4545,
+    "control_a_km2_v1": 0.097,
+    "event_vs_control_a_ratio": 4.69,
+    "event_vs_control_d_ratio": 3.07,
+    "loo_areas_km2": {
+      "2026-06-29": 0.1158,
+      "2026-07-11": 0.1155,
+      "2026-07-23": 0.1802,
+      "2026-08-04": 0.1997
+    },
+    "attributable_vs_control_a": true,
+    "attributable_vs_control_d": true,
+    "circularity_acknowledged": "the v1 control area equals 0.1% of the domain by construction of a p99.9 threshold on the control; the ratio measures how much more area the event shows above that same fixed cutoff"
+  }
+}

@@ -1,0 +1,5437 @@
+{
+  "method": {
+    "v2_of": "v1 cutoff (frozen); same graph, same routing, same config - only the route-vs-masked-terrain test is new",
+    "unassessed_rule": "v1 'still connected' settlements whose shortest route runs more than 5.0 m outside the analysed area (slope>30 deg / shadow masks)",
+    "masked_share_of_bbox": 0.4385
+  },
+  "counts_v2": {
+    "connected (route inside analysed area)": 111,
+    "possibly_cut": 106,
+    "not_analysed": 87,
+    "unassessed (route crosses unobserved terrain)": 483,
+    "already_isolated": 85,
+    "no_road_mapped": 27
+  },
+  "per_settlement": [
+    {
+      "name": "\u0915\u093e\u0920\u092e\u093e\u0921\u094c\u0902",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Somdang",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u0917\u0941\u0935\u093e \u092c\u0947\u0938\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Kintang Phedi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4231.5
+    },
+    {
+      "name": "\u0100rugh\u0101t B\u0101z\u0101r",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0906\u092c\u0942\u0916\u0948\u0930\u0947\u0928\u0940 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0921\u0941\u092e\u094d\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092c\u0947\u0924\u094d\u0930\u093e\u0935\u0924\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1108.5
+    },
+    {
+      "name": "\u092c\u093f\u0930\u094d\u0924\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 785.3
+    },
+    {
+      "name": "\u0936\u093f\u0919\u094d\u0917\u093e\u091f\u093e\u0930",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u0932\u094d\u092f\u093e\u0928\u0915\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1938.8
+    },
+    {
+      "name": "\u091b\u093e\u092a\u0925\u094b\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3495.1
+    },
+    {
+      "name": "\u0921\u0947\u0917\u0935",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1997.6
+    },
+    {
+      "name": "\u092c\u0947\u0932\u0941\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2065.0
+    },
+    {
+      "name": "\u0915\u094b\u0930\u0925\u094b\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2210.6
+    },
+    {
+      "name": "Dharna",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093e\u0919\u094d\u0917\u094d\u092f\u094b\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u093e\u0930\u094d\u0938\u092f\u094b\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0920\u0947\u0928",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 27606.2
+    },
+    {
+      "name": "\u0917\u094b\u0926\u093e\u092e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 27253.9
+    },
+    {
+      "name": "\u092c\u093e\u0939\u0941\u0928\u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 24767.1
+    },
+    {
+      "name": "\u0920\u0941\u0932\u094b \u092d\u093e\u0930\u094d\u0916\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2442.8
+    },
+    {
+      "name": "\u0930\u093e\u0928\u0940\u092a\u094c\u0935\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2869.3
+    },
+    {
+      "name": "\u092e\u093e\u0938\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 544.3
+    },
+    {
+      "name": "\u0915\u0941\u0930\u093f\u0928\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6723.6
+    },
+    {
+      "name": "\u0917\u091c\u0941\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0906\u0926\u092e\u0918\u093e\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1732.6
+    },
+    {
+      "name": "\u0917\u0932\u094d\u091b\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091c\u0919\u094d\u0917\u0947\u0916\u094b\u0932\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 224.1
+    },
+    {
+      "name": "\u0928\u0917\u0930\u0915\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 755.8
+    },
+    {
+      "name": "Bandipur",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 131.7
+    },
+    {
+      "name": "\u092e\u0941\u0917\u094d\u0932\u093f\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3132.0
+    },
+    {
+      "name": "\u092d\u0930\u0924\u092a\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0926\u0941\u0930\u094d\u0938\u093e\u0917\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2399.2
+    },
+    {
+      "name": "\u0932\u094c\u0930\u093f\u092c\u093f\u0928\u093e",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0938\u093e\u0907\u0901\u0915\u0941\u0923\u094d\u0921",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u0902\u0926\u0928 \u092c\u093e\u0921\u0940",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093f\u0919\u094d\u0917\u094d\u0926\u0941\u092e",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0941\u0923\u094d\u0921\u0941",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "Turture",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Nadi Bazar",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0930\u0938\u0941\u0935\u093e\u0917\u0922\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Machhakhola",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 11839.1
+    },
+    {
+      "name": "Tatopani",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 15127.3
+    },
+    {
+      "name": "Dobhan",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Bimalnagar",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 77.7
+    },
+    {
+      "name": "Chisapani",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1030.7
+    },
+    {
+      "name": "\u091a\u094c\u0915\u0940 \u092d\u0928\u091e\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2108.1
+    },
+    {
+      "name": "\u0921\u093e\u0901\u0921\u093e\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 709.2
+    },
+    {
+      "name": "\u0917\u0948\u0930\u0940\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092e\u0938\u094d\u092f\u0930\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091b\u092a\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091b\u093f\u091f\u094d\u091f\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1318.9
+    },
+    {
+      "name": "\u0915\u092b\u094d\u0932\u0947\u0928\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 986.5
+    },
+    {
+      "name": "\u092e\u0915\u0948\u092c\u093e\u0930\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1363.3
+    },
+    {
+      "name": "\u0930\u094b\u0939\u093f\u0923\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1569.1
+    },
+    {
+      "name": "\u0938\u093e\u0925\u0940 \u0915\u0941\u0930\u093f\u092f\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1543.7
+    },
+    {
+      "name": "\u0935\u093f\u0936\u093e\u0932\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 400.4
+    },
+    {
+      "name": "\u0938\u0932\u093e\u0919\u0918\u093e\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 856.2
+    },
+    {
+      "name": "\u0936\u0947\u0930\u094d\u092a\u093e\u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Amppipal",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 198.1
+    },
+    {
+      "name": "\u0915\u0915\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2659.4
+    },
+    {
+      "name": "Chepe Ghat",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Ngadi Lamjung",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Udipur",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 87.6
+    },
+    {
+      "name": "siudibar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092c\u0942\u0922\u093e\u0928\u0940\u0932\u0915\u0923\u094d\u0920",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0917\u094b\u0932\u094d\u092b\u0941\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Naya Sagu",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 345.9
+    },
+    {
+      "name": "\u091c\u0941\u0930\u0947\u0925\u0942\u092e",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0926\u093e\u0919\u092e\u093e\u0908",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 911.3
+    },
+    {
+      "name": "\u0932\u094c\u0915\u0947 \u092c\u093e\u0930\u093e\u0939\u093f\u0924\u093e\u0928",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1222.4
+    },
+    {
+      "name": "\u0915\u093e\u091c\u093f\u0928 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 911.3
+    },
+    {
+      "name": "\u0932\u094c\u0915\u0947 \u0915\u094b\u091f\u0918\u093e\u0921\u0947\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1019.8
+    },
+    {
+      "name": "\u0932\u094c\u0915\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1249.2
+    },
+    {
+      "name": "\u092a\u0932\u094d\u0932\u094b \u0926\u093e\u0919\u092e\u093e\u0908",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 559.0
+    },
+    {
+      "name": "\u0926\u0947\u0935\u0918\u093e\u091f",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0942\u0932\u0916\u0930\u094d\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091d\u0941\u0932\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2108.1
+    },
+    {
+      "name": "Kyamuntar",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 473.3
+    },
+    {
+      "name": "\u0938\u093f\u092e\u094d\u0932\u0947 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 959.5
+    },
+    {
+      "name": "\u0905\u0927\u093f\u0915\u093e\u0930\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0921\u093e\u0901\u0921\u093e\u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0918\u094b\u0930\u0938\u093e\u0908\u0928\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091c\u0940\u0924\u092a\u0941\u0930",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093e\u0930\u094d\u0915\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0926\u0941\u0932\u093e\u0932 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5698,27.7754",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 12091.0
+    },
+    {
+      "name": "settlement@84.5278,27.8137",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u0917\u0941\u0935\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u094b\u0932\u093e\u0930",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0906\u0919\u094d\u092c\u0941 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u093e\u0919\u094d\u0917\u093f\u0928 \u0917\u094b\u0925",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092b\u0947\u0926\u0940",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093e\u0928\u094b \u0917\u094b\u092a\u094d\u091f\u0947",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0925\u093e\u0921\u0947\u092a\u093e\u091f\u0940",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0932 \u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1212.4
+    },
+    {
+      "name": "\u0915\u0941\u091f\u0941\u092e\u0938\u093e\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092a\u093e\u091f\u0940 \u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2577.8
+    },
+    {
+      "name": "\u0915\u0902\u0915\u093e\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 762.0
+    },
+    {
+      "name": "\u0938\u093e\u0928\u094d\u0924\u093f\u0928\u0917\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Arkhet Bazar",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 890.4
+    },
+    {
+      "name": "Lapu Besi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 7345.6
+    },
+    {
+      "name": "\u0932\u0916\u093e\u091c\u0941\u091f\u094b\u0932",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u093e\u0924\u094b\u092a\u093e\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 31360.8
+    },
+    {
+      "name": "\u0928\u093e\u0917\u0925\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 31764.9
+    },
+    {
+      "name": "\u0932\u093f\u0919\u0932\u093f\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0919\u094d\u0917\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 27090.3
+    },
+    {
+      "name": "\u092c\u094d\u0930\u093f\u092e\u0921\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 31764.9
+    },
+    {
+      "name": "\u092c\u094d\u0930\u093e\u092c\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 279.9
+    },
+    {
+      "name": "\u0925\u093e\u0919\u094d\u0938\u094d\u092f\u093e\u092a",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u0941\u092e\u094d\u092c\u093e",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0916\u093e\u0919\u091c\u093f\u092e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092d\u0948\u0902\u0938\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 708.1
+    },
+    {
+      "name": "\u092b\u093f\u0938\u094d\u0932\u093f\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6806.0
+    },
+    {
+      "name": "\u0918\u093e\u091f\u092c\u0947\u0902\u0938\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 367.1
+    },
+    {
+      "name": "\u092e\u0932\u0947\u0916\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u0941\u0930\u093e\u0923\u094b \u092e\u0932\u0947\u0916\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Namjung",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2100.8
+    },
+    {
+      "name": "Bhakunde",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Naruwal Magar Village",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1318.7
+    },
+    {
+      "name": "Bhotewodar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Sundar Bazar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Paudi Bazar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Gairi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1276.1
+    },
+    {
+      "name": "\u092e\u093e\u0925\u093f\u0932\u094d\u0932\u094b \u091a\u094c\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1993.6
+    },
+    {
+      "name": "\u091f\u091f\u094d\u091f\u093e\u0917\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0916\u094b\u0930\u093f\u092f\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@84.4518,27.7315",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Barpak",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Laprak",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Singhla",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0928\u0940\u0932\u0915\u0923\u094d\u0920",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0938\u093f\u0902\u0926\u0941\u0930\u094d\u091a\u0947",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0905\u0930\u094d\u091a\u0932\u0947",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0936\u093e\u0928\u094d\u0924\u093f \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 152.5
+    },
+    {
+      "name": "\u0938\u093f\u092e\u094d\u0932\u0947",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0939\u093e\u0915\u0941 \u092c\u0947\u0938\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 12706.5
+    },
+    {
+      "name": "\u0938\u093e\u0928\u093e\u0947 \u092d\u093e\u0930\u094d\u0916\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3944.7
+    },
+    {
+      "name": "\u091a\u093f\u092a\u094d\u0932\u0947\u091f\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0948\u0932\u0941\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093e\u0928\u094b \u0939\u093e\u0915\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 12815.7
+    },
+    {
+      "name": "\u0921\u093e\u0932\u094d\u092b\u0947\u0921\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 23729.8
+    },
+    {
+      "name": "\u0917\u094d\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 29600.8
+    },
+    {
+      "name": "\u0917\u094d\u0930\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 7702.2
+    },
+    {
+      "name": "\u0920\u093e\u0921\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4780.3
+    },
+    {
+      "name": "\u0915\u094d\u092f\u093e\u0919\u091c\u093f\u0928 \u0917\u094b\u0901\u092a\u093e",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092a\u094d\u0930\u0917\u0924\u0940 \u091f\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.0385,27.8507",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2467.1
+    },
+    {
+      "name": "\u092f\u0941\u092c\u094d\u0930\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3064,28.0180",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Lagang",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.4429,27.9218",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.4525,27.9238",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.4408,27.9264",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.4574,27.9373",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.4359,27.9503",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 7258.1
+    },
+    {
+      "name": "settlement@85.5607,27.8205",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 779.7
+    },
+    {
+      "name": "settlement@85.5572,27.8278",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 17.5
+    },
+    {
+      "name": "settlement@85.5681,27.8301",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 991.3
+    },
+    {
+      "name": "settlement@85.5805,27.8336",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 249.9
+    },
+    {
+      "name": "settlement@85.5621,27.8344",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 980.2
+    },
+    {
+      "name": "settlement@85.5831,27.8351",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 367.7
+    },
+    {
+      "name": "settlement@85.5710,27.8357",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 313.2
+    },
+    {
+      "name": "\u0926\u0941\u092c\u093e\u091a\u094c\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 375.8
+    },
+    {
+      "name": "settlement@85.5650,27.8264",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 667.5
+    },
+    {
+      "name": "\u0916\u093e\u0921\u093f\u0919",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092a\u093e\u0919\u0926\u093e\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0927\u093e\u092a",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u094b\u0932\u0941\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1647.8
+    },
+    {
+      "name": "\u0913\u0916\u094d\u0930\u0947\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1424.2
+    },
+    {
+      "name": "settlement@85.2774,28.0264",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7946,28.1107",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7680,28.1083",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7701,28.1089",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3747,27.9421",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3718,27.9382",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7553,28.0736",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3822,27.9544",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3803,27.9451",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3799,27.9369",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0932\u093e\u0930\u094d\u0915\u0947",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0947\u0932\u092e\u094d\u091a\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0917\u0919\u094d\u0917\u0916\u0930\u094d\u0915",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0928\u093e\u0915\u094b\u091f\u0947",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.4937,27.9368",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.6947,27.9964",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.2638,28.1153",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5951,27.8621",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5849,27.8651",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5422.9
+    },
+    {
+      "name": "settlement@85.4500,27.9891",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5457,27.8071",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 225.7
+    },
+    {
+      "name": "settlement@85.5438,27.8095",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 225.7
+    },
+    {
+      "name": "settlement@85.0656,27.8791",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3323.7
+    },
+    {
+      "name": "settlement@85.0739,27.8801",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2797.1
+    },
+    {
+      "name": "settlement@85.0489,27.8824",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3091.5
+    },
+    {
+      "name": "settlement@85.0757,27.8852",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2603.6
+    },
+    {
+      "name": "\u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919\u0925\u094b\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2600.1
+    },
+    {
+      "name": "settlement@85.0705,27.8920",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2177.2
+    },
+    {
+      "name": "settlement@85.0486,27.8939",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2899.2
+    },
+    {
+      "name": "settlement@85.0617,27.8942",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2732.0
+    },
+    {
+      "name": "settlement@85.0429,27.8946",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u093e\u0930\u0915\u0947\u0936\u094d\u0935\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2098.8
+    },
+    {
+      "name": "settlement@85.0401,27.8965",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4249.3
+    },
+    {
+      "name": "settlement@85.0383,27.8983",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4249.3
+    },
+    {
+      "name": "settlement@85.0559,27.8983",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2324.3
+    },
+    {
+      "name": "settlement@85.0619,27.8983",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2190.9
+    },
+    {
+      "name": "settlement@85.0656,27.9009",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2137.2
+    },
+    {
+      "name": "settlement@85.0381,27.9014",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4935.3
+    },
+    {
+      "name": "settlement@85.0434,27.9028",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5019.3
+    },
+    {
+      "name": "settlement@85.0399,27.9110",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4935.3
+    },
+    {
+      "name": "settlement@85.0757,27.9052",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2117.8
+    },
+    {
+      "name": "settlement@85.0752,27.9090",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0689,27.9153",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2602.8
+    },
+    {
+      "name": "settlement@85.0750,27.9166",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0362,27.9109",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4935.3
+    },
+    {
+      "name": "settlement@85.1079,27.8900",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 169.3
+    },
+    {
+      "name": "settlement@85.1033,27.8911",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 169.3
+    },
+    {
+      "name": "settlement@85.1122,27.8967",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1038.9
+    },
+    {
+      "name": "settlement@85.5595,27.8211",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 531.2
+    },
+    {
+      "name": "settlement@85.5529,27.8201",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5415,27.8221",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 74.1
+    },
+    {
+      "name": "settlement@84.9700,28.0349",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5514.5
+    },
+    {
+      "name": "settlement@84.9797,28.0363",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5893.5
+    },
+    {
+      "name": "settlement@84.9742,28.0370",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5674.5
+    },
+    {
+      "name": "settlement@84.9856,28.0375",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5893.5
+    },
+    {
+      "name": "settlement@84.9739,28.0419",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4703.2
+    },
+    {
+      "name": "settlement@84.9796,28.0431",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5893.5
+    },
+    {
+      "name": "settlement@84.9773,28.0431",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4730.4
+    },
+    {
+      "name": "settlement@84.9810,28.0464",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5569.9
+    },
+    {
+      "name": "settlement@84.9736,28.0491",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9895,28.0507",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5253,27.8250",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 358.3
+    },
+    {
+      "name": "settlement@85.5375,27.8348",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 261.2
+    },
+    {
+      "name": "settlement@84.9531,28.0528",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9681,28.0552",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9662,28.0583",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9678,28.0600",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9640,28.0612",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9643,28.0631",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9508,28.0634",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9466,28.0733",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1252.8
+    },
+    {
+      "name": "Mandre",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0594,27.8701",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3662.8
+    },
+    {
+      "name": "settlement@85.0775,27.8601",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5436,27.8044",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 225.7
+    },
+    {
+      "name": "settlement@85.5382,27.8093",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1425.8
+    },
+    {
+      "name": "settlement@85.5434,27.8133",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 225.7
+    },
+    {
+      "name": "settlement@85.5530,27.8181",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 531.2
+    },
+    {
+      "name": "settlement@85.0849,27.8397",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2109.3
+    },
+    {
+      "name": "settlement@85.0992,27.8400",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 844.8
+    },
+    {
+      "name": "settlement@85.0951,27.8406",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1549.2
+    },
+    {
+      "name": "settlement@85.0788,27.8410",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0771,27.8443",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 735.1
+    },
+    {
+      "name": "settlement@85.0925,27.8444",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1442.3
+    },
+    {
+      "name": "settlement@85.0984,27.8478",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1002.4
+    },
+    {
+      "name": "settlement@85.0885,27.8479",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1361.9
+    },
+    {
+      "name": "settlement@85.0915,27.8485",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1247.5
+    },
+    {
+      "name": "settlement@85.0794,27.8486",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 445.2
+    },
+    {
+      "name": "settlement@85.0864,27.8506",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 215.3
+    },
+    {
+      "name": "settlement@85.0963,27.8507",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0904,27.8522",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 215.3
+    },
+    {
+      "name": "settlement@85.0981,27.8528",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 215.3
+    },
+    {
+      "name": "settlement@85.0809,27.8542",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 315.5
+    },
+    {
+      "name": "settlement@85.0973,27.8545",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 215.3
+    },
+    {
+      "name": "settlement@85.0850,27.8579",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 293.2
+    },
+    {
+      "name": "settlement@85.0948,27.8581",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 215.3
+    },
+    {
+      "name": "settlement@85.5718,27.8020",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5680,27.8072",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 241.0
+    },
+    {
+      "name": "settlement@85.5621,27.8108",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1292.4
+    },
+    {
+      "name": "\u0938\u0947\u0930\u094d\u092e\u093e\u0925\u093e\u0919\u094d\u0917",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1824.2
+    },
+    {
+      "name": "Thailidada",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0095,28.0808",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u093e\u091c\u093f\u092e\u094d\u0930\u093e\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Labsibot",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Dharot",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093e\u0928\u094d\u0926\u094d\u0930\u093e\u0919 \u0917\u0922\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u0948\u0902\u0921\u093e\u0915\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Makaising",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2641.3
+    },
+    {
+      "name": "settlement@85.0025,28.1121",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.9964,28.1346",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "Munge",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 553.5
+    },
+    {
+      "name": "Jiw\u0101danda",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091f\u093f\u0902\u0917\u091a\u0947\u091f",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7289,28.0491",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 613.4
+    },
+    {
+      "name": "settlement@84.6037,27.9164",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3902.6
+    },
+    {
+      "name": "settlement@84.6350,27.9148",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1852.1
+    },
+    {
+      "name": "settlement@84.7259,27.9947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 379.3
+    },
+    {
+      "name": "settlement@84.6979,28.0024",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7128,27.9977",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6906,28.0259",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 56.9
+    },
+    {
+      "name": "settlement@85.4760,27.9341",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 148.6
+    },
+    {
+      "name": "settlement@85.4773,27.9402",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 237.7
+    },
+    {
+      "name": "settlement@84.7580,27.9457",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3346.2
+    },
+    {
+      "name": "\u0938\u093f\u092e\u0925\u0932\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091f\u093f\u092e\u094d\u092c\u0941",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0921\u094b\u0919\u0922\u093f\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091b\u093f\u092e\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2379.9
+    },
+    {
+      "name": "\u0917\u094d\u092f\u093e\u0932\u0925\u0941\u092e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2271.1
+    },
+    {
+      "name": "settlement@85.5255,27.8482",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 68.3
+    },
+    {
+      "name": "settlement@85.5428,27.8499",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 882.3
+    },
+    {
+      "name": "settlement@85.5592,27.8679",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5339,27.8562",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 325.2
+    },
+    {
+      "name": "settlement@85.5291,27.8575",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5598,27.8582",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5375,27.8625",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 402.5
+    },
+    {
+      "name": "settlement@85.5541,27.8669",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5293,27.8762",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2696.7
+    },
+    {
+      "name": "settlement@85.5400,27.8763",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5438,27.8772",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 333.4
+    },
+    {
+      "name": "settlement@85.7235,27.7618",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 165.0
+    },
+    {
+      "name": "Dandagaun",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3039.1
+    },
+    {
+      "name": "settlement@84.7080,28.1289",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.8155,28.0733",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1262.2
+    },
+    {
+      "name": "settlement@84.8141,28.0735",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1262.2
+    },
+    {
+      "name": "settlement@84.8146,28.0744",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1262.2
+    },
+    {
+      "name": "settlement@84.6101,28.1514",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6131,28.1503",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6020,28.1669",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5999,28.1590",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5989,28.1565",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6091,28.1517",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6071,28.1505",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5852,28.1624",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5856,28.1629",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5875,28.1598",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5873,28.1582",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5880,28.1674",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5846,28.1586",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5898,28.1673",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5928,28.1682",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5713,28.1752",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5611,28.1862",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5530,28.1701",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6291,28.1903",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 558.2
+    },
+    {
+      "name": "settlement@84.6342,28.1969",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6315,28.1939",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6747,28.0492",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6771,28.0341",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 623.0
+    },
+    {
+      "name": "settlement@84.6807,28.0369",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 623.0
+    },
+    {
+      "name": "settlement@85.3435,27.9701",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5214,27.9834",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5271,27.9816",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.2942,27.7845",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.2831,27.7854",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3090,27.7836",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3016,27.7860",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3123,27.7877",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3076,27.7888",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3189,27.7895",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3013,27.7915",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3153,27.7975",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 258.3
+    },
+    {
+      "name": "settlement@84.6984,28.1836",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3473,27.8374",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6794.1
+    },
+    {
+      "name": "settlement@84.6247,28.1568",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 678.3
+    },
+    {
+      "name": "settlement@84.6323,28.1618",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.3446,27.8318",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3436,27.8389",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4045.6
+    },
+    {
+      "name": "settlement@85.0669,27.6811",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Borlang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 607.1
+    },
+    {
+      "name": "Kotgau",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Bhirkot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 753.0
+    },
+    {
+      "name": "Finam",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Mohoriyakot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2218.1
+    },
+    {
+      "name": "settlement@84.8551,27.9532",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 675.7
+    },
+    {
+      "name": "settlement@85.2448,27.9875",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.4533,27.9368",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.2721,27.9946",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 9177.0
+    },
+    {
+      "name": "settlement@85.4616,27.8956",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.1671,27.8994",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 83.8
+    },
+    {
+      "name": "settlement@85.1678,27.9027",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 299.6
+    },
+    {
+      "name": "settlement@85.1698,27.9110",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 238.8
+    },
+    {
+      "name": "settlement@85.1761,27.9147",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 326.1
+    },
+    {
+      "name": "settlement@84.8837,28.1550",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.8769,28.1585",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5569.2
+    },
+    {
+      "name": "settlement@84.8923,28.1572",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.8970,28.1614",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7853,28.0160",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1808.6
+    },
+    {
+      "name": "settlement@84.7168,28.0078",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 177.2
+    },
+    {
+      "name": "settlement@84.6992,27.9991",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7014,28.0166",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7120,28.0135",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 621.4
+    },
+    {
+      "name": "settlement@84.7045,28.0116",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 173.0
+    },
+    {
+      "name": "settlement@84.7031,28.0129",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 160.9
+    },
+    {
+      "name": "settlement@84.7041,28.0158",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6862,27.9026",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1756.9
+    },
+    {
+      "name": "settlement@84.7908,27.9401",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1563.7
+    },
+    {
+      "name": "settlement@85.0663,27.8974",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2137.2
+    },
+    {
+      "name": "settlement@85.0424,27.8996",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3687.5
+    },
+    {
+      "name": "settlement@85.0357,27.9001",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4249.3
+    },
+    {
+      "name": "\u0921\u094b\u0917\u094d\u0932\u093e\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0916\u0930\u094d\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1233.5
+    },
+    {
+      "name": "\u0915\u093e\u0932\u093f\u092e\u093e\u091f\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 232.6
+    },
+    {
+      "name": "settlement@85.0576,27.8998",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2289.4
+    },
+    {
+      "name": "settlement@85.0597,27.9005",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2273.2
+    },
+    {
+      "name": "\u0915\u093e\u0909\u0932\u0947 \u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2805.7
+    },
+    {
+      "name": "settlement@85.0263,27.9216",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3934.1
+    },
+    {
+      "name": "settlement@84.5878,28.1890",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5842,28.1876",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5942,28.1997",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 317.7
+    },
+    {
+      "name": "settlement@84.5715,28.2137",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093e\u0917\u0924\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 126.3
+    },
+    {
+      "name": "settlement@84.7401,27.8202",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 732.7
+    },
+    {
+      "name": "settlement@84.7405,27.8295",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1865.2
+    },
+    {
+      "name": "settlement@84.7298,27.8383",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2946.7
+    },
+    {
+      "name": "Bunkot",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.0221,27.9821",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1551.3
+    },
+    {
+      "name": "settlement@85.0317,27.9777",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1727.9
+    },
+    {
+      "name": "\u092c\u0938\u0947\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0915\u0941\u092e\u0948",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2771.3
+    },
+    {
+      "name": "settlement@84.8436,27.9452",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 508.1
+    },
+    {
+      "name": "settlement@85.5685,27.8412",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 375.8
+    },
+    {
+      "name": "\u0916\u0930\u0938\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 254.8
+    },
+    {
+      "name": "settlement@85.0258,28.1860",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u093e\u0932\u093f\u0938 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 101.3
+    },
+    {
+      "name": "Dalgaun",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Irkhu",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0927\u0948\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0926\u093e\u0919\u0938\u093f\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 216.9
+    },
+    {
+      "name": "\u092e\u091d\u0941\u0935\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 317.4
+    },
+    {
+      "name": "\u092e\u094d\u092f\u093e\u0919\u094d\u0938\u093e\u0907\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 26.5
+    },
+    {
+      "name": "\u0905\u092e\u093f\u0925\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 792.0
+    },
+    {
+      "name": "\u0913\u0926\u093e\u0930 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u093f\u092e\u093f\u0932\u094d\u0938\u093f\u0928\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7528,27.9762",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 607.1
+    },
+    {
+      "name": "settlement@85.0437,28.1849",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0580,28.1840",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0404,28.1891",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091c\u0930\u094d\u0938\u093e \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 27716.7
+    },
+    {
+      "name": "settlement@85.0655,28.2196",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.2963,28.1754",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 25459.5
+    },
+    {
+      "name": "settlement@85.2865,28.2049",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u0947\u091f\u093e\u0919\u091a\u0947\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 30178.4
+    },
+    {
+      "name": "settlement@85.3108,28.1938",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092d\u094d\u0930\u091c\u092e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 21713.8
+    },
+    {
+      "name": "\u0920\u0941\u0932\u094b \u0938\u094d\u092f\u093e\u092a\u094d\u0930\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2399.2
+    },
+    {
+      "name": "\u091f\u0947\u0919\u094d\u091a\u0947\u091f",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0353,28.1495",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093f\u091a\u0947\u091f",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u094d\u092f\u0941\u092a\u091a\u0947\u091f",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0135,28.0730",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6782.4
+    },
+    {
+      "name": "settlement@85.0256,28.0843",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.0614,28.0843",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0932\u093f\u0919\u094d\u091c\u094b",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "Puru",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "Awan",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "Phyang Gaon",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0927\u0930\u092e\u092a\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091d\u094b\u0930 \u092e\u0939\u093e\u0919\u094d\u0915\u093e\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0925\u093e\u092a\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1784.7
+    },
+    {
+      "name": "\u091f\u094b\u0916\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@84.9132,28.1815",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7669,28.0521",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 815.6
+    },
+    {
+      "name": "Dum\u0101n",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Ilam Pokhari",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6633,27.9153",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1668.2
+    },
+    {
+      "name": "\u092c\u093f\u0926\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0939\u0947\u0932\u094d\u092e\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 237.7
+    },
+    {
+      "name": "\u0924\u093e\u0930\u0915\u0947 \u0918\u094d\u092f\u093e\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7472,27.9386",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1193.3
+    },
+    {
+      "name": "settlement@84.8784,27.9737",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1510.1
+    },
+    {
+      "name": "settlement@84.8050,27.9754",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 925.4
+    },
+    {
+      "name": "settlement@84.8402,27.9498",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 508.1
+    },
+    {
+      "name": "settlement@84.7454,27.8952",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2199.4
+    },
+    {
+      "name": "settlement@84.8300,27.9558",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 609.6
+    },
+    {
+      "name": "settlement@84.8753,27.9744",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1667.1
+    },
+    {
+      "name": "\u0915\u093e\u092b\u0932\u092a\u093e\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 675.7
+    },
+    {
+      "name": "settlement@84.7734,27.9468",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2336.1
+    },
+    {
+      "name": "settlement@84.8277,27.9539",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.8578,27.9490",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 489.9
+    },
+    {
+      "name": "settlement@84.8323,27.9549",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7743,27.9562",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7789,27.9441",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2019.6
+    },
+    {
+      "name": "settlement@84.7786,27.9633",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1786.7
+    },
+    {
+      "name": "settlement@84.8389,27.9467",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 508.1
+    },
+    {
+      "name": "settlement@84.8765,27.9580",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 828.5
+    },
+    {
+      "name": "settlement@84.7396,27.9038",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2136.5
+    },
+    {
+      "name": "settlement@84.8335,27.9489",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 508.1
+    },
+    {
+      "name": "settlement@84.7996,27.9734",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 925.4
+    },
+    {
+      "name": "\u091c\u094d\u0935\u093e\u0932\u093e\u092e\u0941\u0916\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2119.8
+    },
+    {
+      "name": "settlement@84.8718,27.9648",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7397,27.8973",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2136.5
+    },
+    {
+      "name": "settlement@84.7026,27.8332",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Baluwa",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.5917,28.0870",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1865.1
+    },
+    {
+      "name": "\u0917\u094b\u0917\u0928\u0947",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091d\u0930\u094d\u0915\u0932\u0947\u0930\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.5192,27.7464",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 620.7
+    },
+    {
+      "name": "settlement@84.8009,27.9872",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 343.5
+    },
+    {
+      "name": "settlement@84.7688,27.8964",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1363.6
+    },
+    {
+      "name": "settlement@84.7615,27.8986",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1671.2
+    },
+    {
+      "name": "settlement@84.7696,27.8999",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1363.6
+    },
+    {
+      "name": "settlement@84.7658,27.9001",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1363.6
+    },
+    {
+      "name": "settlement@84.7642,27.9023",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1461.2
+    },
+    {
+      "name": "settlement@84.8304,27.8996",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 366.4
+    },
+    {
+      "name": "settlement@84.6881,27.9315",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1422.3
+    },
+    {
+      "name": "settlement@84.6375,28.0578",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 345.9
+    },
+    {
+      "name": "settlement@84.6311,28.0646",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 520.6
+    },
+    {
+      "name": "settlement@84.6262,28.0704",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 638.3
+    },
+    {
+      "name": "settlement@84.6240,28.0716",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 638.3
+    },
+    {
+      "name": "Arupokhari",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Majhuwa",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@85.3460,28.1768",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.6128,28.1930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@84.5593,28.1412",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "settlement@84.7035,27.9676",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 195.7
+    },
+    {
+      "name": "settlement@84.7107,27.9636",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 195.7
+    },
+    {
+      "name": "settlement@84.7078,27.9668",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 195.7
+    },
+    {
+      "name": "settlement@84.6935,27.9708",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 178.4
+    },
+    {
+      "name": "settlement@84.4463,27.8202",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "kharpani",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 69.4
+    },
+    {
+      "name": "pauroti bhandar",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 69.4
+    },
+    {
+      "name": "\u091b\u0947\u092c\u0947\u091f\u093e\u0930 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Luitel Bhaniyan",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Gumda",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Yamgaun",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0928\u093e\u0917\u0940 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 750.7
+    },
+    {
+      "name": "settlement@85.6224,27.8445",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1226.1
+    },
+    {
+      "name": "settlement@85.6247,27.8411",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1226.1
+    },
+    {
+      "name": "settlement@85.6438,27.8504",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1641.0
+    },
+    {
+      "name": "settlement@85.6361,27.8500",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 899.6
+    },
+    {
+      "name": "settlement@85.6065,27.8616",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1917.3
+    },
+    {
+      "name": "settlement@85.6064,27.8595",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1917.3
+    },
+    {
+      "name": "\u0915\u094b\u091f\u0917\u093e\u0909\u0901 \u0920\u093e\u091f\u0940 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 473.5
+    },
+    {
+      "name": "\u092d\u0930\u0915\u0947\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 317.4
+    },
+    {
+      "name": "\u0920\u0942\u0932\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 480.6
+    },
+    {
+      "name": "\u092c\u0938\u094d\u0928\u0947\u0924 \u091f\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 246.0
+    },
+    {
+      "name": "\u0926\u0947\u0909\u0930\u093e\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 218.9
+    },
+    {
+      "name": "\u0915\u093e\u0924\u094d\u0924\u093f\u0915\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 246.0
+    },
+    {
+      "name": "\u092e\u0939\u093e \u092d\u093f\u0930",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u094d\u092f\u093e\u0925\u094d\u0932\u094b \u0915\u093e\u0932\u0947\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 887.3
+    },
+    {
+      "name": "\u0938\u093e\u0930\u094d\u0915\u0940 \u091f\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 100.4
+    },
+    {
+      "name": "\u091f\u093e\u0932\u094d\u0932\u094b \u0915\u093e\u0932\u0947\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1010.5
+    },
+    {
+      "name": "\u0924\u093f\u0919\u094d\u0916\u0923\u094d\u0921\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 100.4
+    },
+    {
+      "name": "settlement@85.2821,27.9039",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2161.1
+    },
+    {
+      "name": "\u0932\u0921\u093e\u092a",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1252.8
+    },
+    {
+      "name": "\u0917\u094b\u092c\u094d\u0930\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0905\u0935\u094b\u0907 \u0917\u093e\u0909\u0901",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0907\u0938\u093f\u092e \u0917\u093e\u0909\u0901",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0916\u094d\u092f\u093e\u0926\u093e\u0930",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0941\u0919\u094d\u0917",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093e\u0924\u0926\u094b\u092c\u093e\u091f\u094b",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 977.7
+    },
+    {
+      "name": "\u0928\u0941\u091a\u0947\u0924 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1293.8
+    },
+    {
+      "name": "\u092c\u093e\u092c\u093f\u0932 \u0916\u0930\u094d\u0915",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0906\u0932 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 457.9
+    },
+    {
+      "name": "\u092d\u093e\u0926\u0941\u0935\u093e\u0930 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u091e\u094d\u091a\u0917\u0922",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 229.7
+    },
+    {
+      "name": "\u0938\u094d\u092f\u093e\u0909\u0932\u0947 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u0947\u0930\u0941\u0919\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 306.7
+    },
+    {
+      "name": "\u0907\u091c\u093e\u0930\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u093e\u0928\u094d\u0927\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 397.2
+    },
+    {
+      "name": "\u0938\u094b\u0930\u0918\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 397.2
+    },
+    {
+      "name": "\u0930\u093f\u091c\u0932 \u0917\u093e\u0901\u0909",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u093e\u0932\u094d\u0924\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2979.8
+    },
+    {
+      "name": "\u092d\u0923\u094d\u0921\u093e\u0930\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 397.2
+    },
+    {
+      "name": "\u0926\u094b\u0927\u0947\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1131.9
+    },
+    {
+      "name": "Chhebetar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091b\u0924\u094d\u0930\u0947 \u0926\u0947\u0909\u0930\u093e\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 87.9
+    },
+    {
+      "name": "Kokhim",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u094d\u092f\u093e\u092e\u0925\u0932\u0940",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0932\u093e\u0915\u094d\u091a\u094b",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091b\u092a\u094d\u091a\u0947\u0924",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092f\u093e\u092e\u091a\u0947\u091f",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092a\u093e\u0924\u093f\u091a\u094b",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u0932\u093e\u092e\u0930\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u0930\u093e\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u0935\u093e\u0932",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0927\u0941\u0938\u0947\u0928\u0940",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u094b\u0915\u094d\u0925\u0932\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u0930\u094d\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 7083.2
+    },
+    {
+      "name": "\u092a\u0941\u0930\u0941\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u094b\u0919\u0932\u093e\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u094b\u0917\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u093e\u092e\u0924\u093e\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u0948\u0930\u0940\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u093e\u0930\u0941\u0919\u094d\u0917\u0947",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0926\u0947\u0935\u0940\u0918\u093e\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092c\u0941\u0919\u0924\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3588.0
+    },
+    {
+      "name": "\u091a\u093f\u092a\u0941\u091f",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0918\u0932\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u0941\u092e\u094d\u0938\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093e\u0930\u094d\u0915\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1783.9
+    },
+    {
+      "name": "\u0925\u0941\u0932\u094b \u0917\u093e\u0909\u0901",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Dumre",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1784.7
+    },
+    {
+      "name": "Bhogteni",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 918.3
+    },
+    {
+      "name": "Dtar",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 188.7
+    },
+    {
+      "name": "\u0930\u093e\u0924\u092e\u093e\u091f\u0947 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.5464,27.8047",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1278.0
+    },
+    {
+      "name": "\u092d\u093e\u0932\u094d\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1107.4
+    },
+    {
+      "name": "settlement@84.5435,28.0898",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1346.3
+    },
+    {
+      "name": "\u092e\u0941\u0921\u094d\u0916\u0941",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0905\u092e\u094d\u092c\u0941\u091a\u0947\u091f",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Bagale",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u094b\u0932\u094d\u0921\u094b\u0917\u093e\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u094b\u0916\u094b\u0930",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Dimdungkhor",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0939\u094b\u092a",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091c\u094b\u0919\u094d\u0938\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092f\u093e\u0930\u094d\u0938\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092d\u0948\u0930\u092e\u0915\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1151.8
+    },
+    {
+      "name": "\u092d\u094d\u092f\u093e\u0917\u0941\u0924\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 814.7
+    },
+    {
+      "name": "\u0917\u0917\u0924\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 859.8
+    },
+    {
+      "name": "\u0917\u0948\u0930\u093e\u0925\u094b\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1607.5
+    },
+    {
+      "name": "\u091c\u092b\u093e\u0924\u0940",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0939\u093e\u0926\u0947\u0935 \u092c\u0947\u0938\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091c\u094d\u092f\u093e\u092e\u093f\u0930\u0947\u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 489.9
+    },
+    {
+      "name": "\u0928\u0947\u092a\u094d\u0930\u093e\u0919\u094d\u091a\u0947\u091f",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0930\u092e\u094d\u0915\u094b\u091f \u0915\u0941\u092e\u093e\u0932 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Percho, Jharlang",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0932\u093e\u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2925.0
+    },
+    {
+      "name": "\u092e\u0947\u092f\u093e\u092e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092b\u0947\u0926\u0940 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 249.6
+    },
+    {
+      "name": "Abuwa",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 770.4
+    },
+    {
+      "name": "Karmasin",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1181.6
+    },
+    {
+      "name": "Syauli Bazaar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Birenchok",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 151.1
+    },
+    {
+      "name": "Silintar",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6468.3
+    },
+    {
+      "name": "Gyajhadada",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Namjun",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 742.6
+    },
+    {
+      "name": "\u0925\u093e\u0915\u094d\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2436.4
+    },
+    {
+      "name": "\u0932\u093e\u092e\u093f\u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 21.2
+    },
+    {
+      "name": "Nagapani",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 84.0
+    },
+    {
+      "name": "Khorlabesi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 13785.8
+    },
+    {
+      "name": "Aruarbang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1416.4
+    },
+    {
+      "name": "Aruarbang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1606.6
+    },
+    {
+      "name": "Aaru Chanuate",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 744.4
+    },
+    {
+      "name": "Ghyalchok",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Ghyalchok",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 732.7
+    },
+    {
+      "name": "Bhumlichok",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Darbhung",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4790.3
+    },
+    {
+      "name": "\u0917\u094b\u0930\u0916\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Muchhok",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 957.7
+    },
+    {
+      "name": "Saurpani",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Swanra",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Ta.ma.la. Bot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3471.4
+    },
+    {
+      "name": "Srinathkot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4150.3
+    },
+    {
+      "name": "Aruarbang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3427.2
+    },
+    {
+      "name": "Manakamana",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2089.8
+    },
+    {
+      "name": "Pandrung",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2228.2
+    },
+    {
+      "name": "Bakrang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1154.1
+    },
+    {
+      "name": "Takukot",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Gakhu",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1335.3
+    },
+    {
+      "name": "Chapa Bhanjyang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 585.0
+    },
+    {
+      "name": "Chhoprak",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1414.2
+    },
+    {
+      "name": "\u0936\u093f\u092e\u091c\u0941\u0928\u0917",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6689.1
+    },
+    {
+      "name": "Saurpani",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Srinathkot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4806.5
+    },
+    {
+      "name": "Jaubari",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4663.7
+    },
+    {
+      "name": "\u092d\u091a\u0947\u091a\u094d\u0915 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0916\u0930\u093f\u092c\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 21.2
+    },
+    {
+      "name": "Simjung",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 134.9
+    },
+    {
+      "name": "Ghyachok",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Deurali",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 249.6
+    },
+    {
+      "name": "Dhuwakot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 688.7
+    },
+    {
+      "name": "Chyngli",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 688.7
+    },
+    {
+      "name": "Gaikhur",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Mirkot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 91.6
+    },
+    {
+      "name": "Mirkot",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 354.8
+    },
+    {
+      "name": "Palungtar",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Aanppipal",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 826.9
+    },
+    {
+      "name": "Harmhi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 274.2
+    },
+    {
+      "name": "Thalajung",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 553.5
+    },
+    {
+      "name": "Deurali",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Bakrang",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Kashigaun",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Laprak",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Gumda",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Lapu",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Thumi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 924.9
+    },
+    {
+      "name": "Makaising",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2351.8
+    },
+    {
+      "name": "Tanglichok",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1940.1
+    },
+    {
+      "name": "Dhawa",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 886.4
+    },
+    {
+      "name": "Baguwa",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 387.5
+    },
+    {
+      "name": "Taple",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Asrang",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 28.3
+    },
+    {
+      "name": "Phujel",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6527.4
+    },
+    {
+      "name": "Panchkhuwa Deurali",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2235.4
+    },
+    {
+      "name": "\u091d\u0930\u0932\u093e\u0919",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0930\u0941\u0935\u0940 \u092d\u094d\u092f\u093e\u0932\u0940",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0917\u0928\u092a\u093e\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 538.4
+    },
+    {
+      "name": "\u0916\u093e\u0932\u094d\u091f\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3261.4
+    },
+    {
+      "name": "\u0927\u0941\u0935\u093e\u0915\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1813.9
+    },
+    {
+      "name": "Dhussa",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1047.5
+    },
+    {
+      "name": "\u0927\u0907\u092c\u0941\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 147.2
+    },
+    {
+      "name": "\u0917\u0941\u0928\u094d\u0938\u093e\u0915\u094b\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 173.0
+    },
+    {
+      "name": "\u092c\u093e\u0932\u0941\u0935\u093e\u092a\u093e\u091f\u0940 \u0926\u0947\u0909\u092a\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 305.8
+    },
+    {
+      "name": "\u0921\u093e\u0901\u0921\u093e\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2686.5
+    },
+    {
+      "name": "\u0917\u0923\u0947\u0936\u0938\u094d\u0925\u093e\u0928",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2618.6
+    },
+    {
+      "name": "Beteni",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5986.8
+    },
+    {
+      "name": "Rautbesi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5083.4
+    },
+    {
+      "name": "\u0939\u0948\u092c\u0941\u0902\u0917",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 960.7
+    },
+    {
+      "name": "\u092a\u0902\u0921\u093f\u0924 \u091a\u094c\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0905\u092e\u0930\u093e\u0935\u0924\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 141.5
+    },
+    {
+      "name": "\u70ed\u7d22",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u0947\u0930\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0917\u0930 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u093e\u0932\u094d\u0924\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3028.6
+    },
+    {
+      "name": "\u0915\u0941\u0938\u0941\u0928\u094d\u0921\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1796.9
+    },
+    {
+      "name": "settlement@84.8612,27.9005",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 74.7
+    },
+    {
+      "name": "\u091a\u093e\u092e\u094d\u092a\u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919 \u092c\u091c\u093e\u0930",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u0938\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 207.7
+    },
+    {
+      "name": "\u092d\u094b\u0930\u094d\u0932\u0947\u092e\u0923\u0940 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Phulpatidanda",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5835.0
+    },
+    {
+      "name": "\u092a\u093f\u092a\u0932\u091f\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Rainaskot",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0926\u0941\u0935\u093e\u0930\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3974.7
+    },
+    {
+      "name": "\u0928\u0939\u0930\u094d\u0915\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 803.0
+    },
+    {
+      "name": "\u0938\u0941\u092c\u0947\u0926\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u093e\u0919\u0932\u093f\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 28975.9
+    },
+    {
+      "name": "Archale,Gorkha",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "Deeurali Danda",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 180.8
+    },
+    {
+      "name": "Kafachaap Gaun",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 974.3
+    },
+    {
+      "name": "\u0928\u093e\u0932\u0926\u0941\u092e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 416.2
+    },
+    {
+      "name": "\u0917\u094b\u0907\u0930\u093e\u0919",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0916\u093e\u0930\u094d\u091a\u0941\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Parajuli Gaun",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1346.3
+    },
+    {
+      "name": "Riepe Village",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 497.2
+    },
+    {
+      "name": "\u0922\u0941\u0919\u094d\u0917\u0947\u0927\u093e\u0930\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0915\u093e\u0932\u093f\u0915\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0915\u092a\u093e\u0939\u093f\u091f\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0917\u093e\u092e \u0922\u094b\u0915\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0939\u0932\u091a\u093e\u092a",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092d\u093f\u0932\u093e\u092b\u094d\u092f\u093e\u0928\u094d\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0925\u093e\u092a\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092e\u0917\u092e \u091f\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "settlement@85.4298,27.7162",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Balambu",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "Iku Tol",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092e\u0927\u094d\u092f\u092a\u0941\u0930 \u0925\u093f\u092e\u093f",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u0941\u0922\u093e\u0925\u094b\u0915\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 58.9
+    },
+    {
+      "name": "\u092a\u094c\u0935\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u092e\u0925\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0915\u0941\u0908\u0901\u0915\u0947\u0932 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u0928\u094d\u0926\u094d\u0930\u093e\u0917\u093f\u0930\u0940",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0915\u0930\u094d\u0923\u0947\u0936\u094d\u0935\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0915\u093e\u0917\u0947\u0936\u094d\u0935\u0930\u0940 \u092e\u0928\u094b\u0939\u0930\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0928\u093e\u0917\u093e\u0930\u094d\u091c\u0941\u0928",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0936\u0919\u094d\u0916\u0930\u093e\u092a\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0924\u093e\u0930\u0915\u0947\u0936\u094d\u0935\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u093e\u0901\u0917\u0941\u0928\u093e\u0930\u093e\u092f\u0923",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091b\u093f\u092e\u094d\u0924\u0940",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u093f\u092a\u094d\u0932\u093f\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2786.4
+    },
+    {
+      "name": "\u092c\u094b\u0936\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1667.1
+    },
+    {
+      "name": "\u0928\u0935\u0932\u092a\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6517.8
+    },
+    {
+      "name": "\u0932\u093e\u0935\u093e\u0921\u0941\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093e\u092e\u093f\u0902 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 90.1
+    },
+    {
+      "name": "\u091b\u093f\u0917\u0941",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u0940\u0928 \u0927\u093e\u0930\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 670.8
+    },
+    {
+      "name": "\u092c\u093e\u0938\u0928\u0947\u091f \u091f\u094b\u0932\u0947",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u0947\u0909\u0930\u0947\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1445.2
+    },
+    {
+      "name": "\u0932\u0915\u094d\u0937\u094d\u092e\u0940 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0938\u093f\u092e\u0932\u0940\u0917\u0922\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 188.6
+    },
+    {
+      "name": "Pering Kharka",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093f\u0938\u0921\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 87.9
+    },
+    {
+      "name": "\u092c\u0928\u094d\u091a\u0930\u0947 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0936\u094d\u0930\u0940 \u092c\u093f\u0928\u093e\u092f\u0915 \u091f\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u093e\u092a\u093e\u091a\u094b \u0917\u0923\u0947\u0936",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0917\u094b\u0902\u0917\u093e\u091a\u093f\u0935\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093f\u0938\u094d\u0928\u0947\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6502.9
+    },
+    {
+      "name": "\u091c\u093e\u0917\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3353.9
+    },
+    {
+      "name": "\u0928\u093f\u0919\u094d\u0917\u0932\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5007.8
+    },
+    {
+      "name": "National Rainbow Trout Research Station, Dhunche",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 147.6
+    },
+    {
+      "name": "Pasture and Fodder Research Station, Dhunche",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 332.1
+    },
+    {
+      "name": "\u092a\u093e\u0901\u091a\u092a\u094b\u0916\u0930\u0940 \u0925\u093e\u0919\u094d\u092a\u093e\u0932",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u0942\u0932\u0916\u0930\u094d\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1641.0
+    },
+    {
+      "name": "\u092e\u0947\u0932\u092e\u094d\u091a\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0917\u094b\u092c\u094d\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2051.6
+    },
+    {
+      "name": "\u092a\u093e\u0932\u0941\u0919\u091f\u093e\u0930 \u092c\u091c\u093e\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0939\u093f\u0932\u0947 \u092d\u093f\u091f\u094d\u091f\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093e\u0932\u093f\u092e \u092d\u093f\u0924\u094d\u0924\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0922\u0941\u0919\u094d\u0917\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1066.7
+    },
+    {
+      "name": "\u0918\u094b\u0930\u094d\u092e\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1188.7
+    },
+    {
+      "name": "\u092a\u093e\u0930\u091a\u094d\u092f\u093e\u0919\u094d\u0917",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0928\u094c\u0935\u093f\u0938\u0947 \u092b\u093e\u0901\u091f",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0927\u0930\u094d\u0928\u093e\u092d\u0926\u094c\u0930\u0947",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093f\u0930\u0941\u091a\u0947\u0924",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0916\u093e\u0932\u091a\u0947\u0924",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1160.3
+    },
+    {
+      "name": "\u0938\u0930\u0938\u093f\u0909",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1011.0
+    },
+    {
+      "name": "\u092a\u093e\u091c\u0941\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 20991.5
+    },
+    {
+      "name": "\u0924\u0940\u0928\u0918\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5258.1
+    },
+    {
+      "name": "\u0939\u093e\u0924 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4873.9
+    },
+    {
+      "name": "\u0921\u093e\u0901\u0921\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4873.9
+    },
+    {
+      "name": "\u0930\u093e\u0923\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5776.8
+    },
+    {
+      "name": "\u0930\u094c\u0925\u094b\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5670.5
+    },
+    {
+      "name": "\u0938\u094c\u092e\u0941\u0930\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5776.8
+    },
+    {
+      "name": "\u091b\u0939\u093e\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2869.3
+    },
+    {
+      "name": "\u092a\u093e\u0919\u094d\u092a\u094d\u0930\u093e",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u094b\u091f\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0928\u093f\u0915\u094d\u0932\u093f\u0928\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0928\u093e\u092e\u094d\u0938\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u094d\u092f\u093e\u0928\u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1647.8
+    },
+    {
+      "name": "\u0930\u093e\u0928\u0940\u092c\u093e\u0930\u093f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 178.0
+    },
+    {
+      "name": "\u0932\u093e\u092e\u094d\u092a\u093e\u0924\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0932\u0947\u092e\u0917\u0941\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 290.0
+    },
+    {
+      "name": "\u092a\u093e\u0919\u094d\u200d\u092e\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 434.9
+    },
+    {
+      "name": "\u0939\u0947\u0909\u0926\u0941\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1647.8
+    },
+    {
+      "name": "\u0927\u093e\u0926\u093f\u0919\u094d\u092c\u093e\u0930\u093f",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093e\u0919\u094d\u0932\u0947 \u0921\u093e\u0901\u0921\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u0947\u0919\u094d\u091a\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0921\u0947 \u0917\u093e\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092e\u093e\u0932\u0941\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1647.8
+    },
+    {
+      "name": "\u0915\u091f\u0941\u0928\u094d\u091c\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1647.8
+    },
+    {
+      "name": "\u092c\u093f\u0938\u0928\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1647.8
+    },
+    {
+      "name": "\u0926\u093e\u092e\u094d\u092c\u093f\u092f\u094b\u0926\u0930 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 434.9
+    },
+    {
+      "name": "\u0928\u0947\u0917\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 434.9
+    },
+    {
+      "name": "\u0917\u094d\u092f\u093e\u0932\u094d\u092e\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 178.0
+    },
+    {
+      "name": "\u0938\u0947\u0932\u094d\u091c\u0941\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 178.0
+    },
+    {
+      "name": "\u0915\u094c\u0932\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 290.0
+    },
+    {
+      "name": "\u091a\u094d\u092f\u093e\u092e\u094d\u0921\u094b\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u093f\u0917\u094b\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 135.6
+    },
+    {
+      "name": "\u0939\u0941\u0915\u0947\u0932 \u0917\u093e\u0909\u0901",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0909\u092a\u094d\u0930\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u094b\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0905\u092a\u0947\u0928\u094c \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0918\u094d\u092f\u093e\u0935\u093e\u0930 \u091a\u094c\u0930",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u091a\u0947\u0924\u093e\u0919\u094d \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092a\u094b\u0932\u094b\u0916\u0930\u094d\u0915 \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0907\u0928\u094d\u0926\u0941\u092e \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u0938\u0947\u0930\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u093e\u0932\u0941 \u0917\u093e\u0909\u0901",
+      "v1_status": "no_road_mapped",
+      "v2_status": "no_road_mapped",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092f\u0930\u094d\u092a\u093e\u092a\u093e\u0928\u0940 \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u0947\u0932\u094b\u0932\u094b \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092a\u093f\u0919\u094d\u0924\u093e\u092c\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093f\u0938\u093f\u092a\u0941 \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0906\u0916\u094d\u092f\u0941 \u0917\u093e\u0909\u0901",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0938\u093f\u0919\u094d\u200d\u0917\u093e\u091c\u0947 \u0917\u093e\u0909\u0901",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "Yangdi",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1756.9
+    },
+    {
+      "name": "Tolak Gaun",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5669.0
+    },
+    {
+      "name": "Siran Gaun",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5100.7
+    },
+    {
+      "name": "\u090f\u0915\u094d\u092a\u093e\u0916\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3684.2
+    },
+    {
+      "name": "\u0926\u0928\u0941\u0938\u094d\u0935\u093e\u0930\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5885.2
+    },
+    {
+      "name": "\u092e\u093e\u0928\u094d\u0921\u0941\u091a\u0947\u091f",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 9402.6
+    },
+    {
+      "name": "\u091a\u094d\u092f\u0941\u092a\u0930 \u0916\u094b\u0932\u093e",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0915\u092a\u094d\u0924\u093e\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3684.2
+    },
+    {
+      "name": "\u0925\u093e\u0919\u094d\u0938\u0947\u0928 \u092f\u0941\u0935\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0918\u093f\u091a\u0947\u0924",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092c\u0921\u0939\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 157.9
+    },
+    {
+      "name": "\u0915\u094b\u092e\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1188.7
+    },
+    {
+      "name": "\u0918\u093f\u091a\u0947\u0924 \u0918\u091f\u0947\u0932\u0941\u0919",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0921\u093e\u0901\u0921\u093e\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 293.5
+    },
+    {
+      "name": "\u0926\u093e\u0938\u0922\u0941\u0902\u0917\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 177.9
+    },
+    {
+      "name": "Jalbire",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0924\u093e\u0930\u0947\u092d\u093f\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 697.1
+    },
+    {
+      "name": "\u092e\u0941\u0939\u093e\u0928 \u092a\u094b\u0916\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092d\u091e\u094d\u091c\u094d\u092f\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 22198.3
+    },
+    {
+      "name": "\u0938\u0941\u0930\u094d\u0915\u093e",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u092d\u0941\u0932\u092d\u0941\u0932\u0947",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "Dhadkharka",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 948.9
+    },
+    {
+      "name": "Riyalthok",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 990.9
+    },
+    {
+      "name": "\u0915\u0947\u0930\u093e\u092c\u093e\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4077.9
+    },
+    {
+      "name": "\u0939\u093f\u0932\u0947 \u0916\u093e\u0930\u094d\u0915\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1954.1
+    },
+    {
+      "name": "\u0930\u093e\u092e\u094d\u091a\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3345.1
+    },
+    {
+      "name": "\u0926\u0947\u0909\u0930\u093e\u0932\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4388.5
+    },
+    {
+      "name": "\u092b\u094d\u092f\u093e\u0915\u094d\u0938\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3261.4
+    },
+    {
+      "name": "\u091c\u0932\u094d\u0915\u093f\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4542.4
+    },
+    {
+      "name": "\u092d\u094b\u0930\u094d\u0932\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4629.9
+    },
+    {
+      "name": "\u0938\u094d\u092f\u093e\u0932\u0921\u093e\u0901\u0921\u093e \u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3261.4
+    },
+    {
+      "name": "\u092a\u0939\u093e\u0930\u0947\u091b\u093e\u092a",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3899.6
+    },
+    {
+      "name": "\u0926\u0947\u0935\u093f\u0925\u093e\u0928",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4343.4
+    },
+    {
+      "name": "\u0917\u0948\u0930\u0940\u0917\u093e\u0909\u0901",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4712.3
+    },
+    {
+      "name": "\u092a\u0924\u0947\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3135.2
+    },
+    {
+      "name": "\u091c\u093e\u092e\u0941\u0928\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 4835.2
+    },
+    {
+      "name": "\u0915\u092b\u0932\u0947\u0936\u094d\u0935\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3245.1
+    },
+    {
+      "name": "\u0922\u0941\u0938\u0923\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3258.2
+    },
+    {
+      "name": "\u0938\u094c\u0928\u0947\u092a\u093e\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2901.0
+    },
+    {
+      "name": "\u0917\u0948\u0930\u0940 \u092c\u093e\u0938\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5700.6
+    },
+    {
+      "name": "\u0921\u093e\u0901\u0921\u093e \u092c\u093e\u0938\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 3772.6
+    },
+    {
+      "name": "\u0915\u093e\u092e\u0928\u093e \u091f\u094b\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092e\u0939\u0947\u0936-\u0926\u094b\u092d\u093e\u0928",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u094c\u0915\u0940\u0921\u093e\u0902\u0921\u093e",
+      "v1_status": "not_analysed",
+      "v2_status": "not_analysed",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0907\u091a\u094d\u091b\u093e\u0915\u093e\u092e\u0928\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 6723.6
+    },
+    {
+      "name": "\u0927\u0941\u0928\u093f\u0935\u0947\u0936\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0916\u0928\u093f\u092f\u093e\u092c\u093e\u0938",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5893.5
+    },
+    {
+      "name": "\u0928\u0947\u0924\u094d\u0930\u093e\u0935\u0924\u0940 \u0921\u092c\u091c\u094b\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1061.6
+    },
+    {
+      "name": "\u0925\u093e\u0915\u094d\u0930\u0947",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092c\u0947\u0928\u0940\u0918\u093e\u091f \u0930\u094b\u0930\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 400.4
+    },
+    {
+      "name": "\u0938\u093f\u0926\u094d\u0927\u0932\u0947\u0915",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 5048.5
+    },
+    {
+      "name": "\u0924\u094d\u0930\u093f\u092a\u0941\u0930\u093e\u0938\u0941\u0928\u094d\u0926\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 343.5
+    },
+    {
+      "name": "\u0917\u0919\u094d\u0917\u093e\u091c\u092e\u0941\u0928\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0928\u094c\u0915\u0941\u0923\u094d\u0921",
+      "v1_status": "already_isolated",
+      "v2_status": "already_isolated",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0909\u0924\u094d\u0924\u0930\u0917\u092f\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1418.0
+    },
+    {
+      "name": "\u0915\u093e\u0932\u093f\u0915\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 623.7
+    },
+    {
+      "name": "\u0906\u092e\u093e\u091b\u094b\u0926\u093f\u0919\u094d\u092e\u094b",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 25745.1
+    },
+    {
+      "name": "\u0917\u094b\u0938\u093e\u0907\u0901\u0915\u0941\u0923\u094d\u0921",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u091a\u094c\u0924\u093e\u0930\u093e \u0938\u093e\u0901\u0917\u093e\u091a\u094b\u0915\u0917\u0922\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u092a\u093e\u0901\u091a\u092a\u094b\u0916\u0930\u0940 \u0925\u093e\u0919\u092a\u093e\u0932",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1679.1
+    },
+    {
+      "name": "\u0939\u0947\u0932\u092e\u094d\u092c\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2805.3
+    },
+    {
+      "name": "\u0908\u0928\u094d\u0926\u094d\u0930\u093e\u0935\u0924\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1485.8
+    },
+    {
+      "name": "\u092e\u0923\u094d\u0921\u0928\u0926\u0947\u0909\u092a\u0941\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    },
+    {
+      "name": "\u0915\u093f\u0938\u094d\u092a\u093e\u0919",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1293.8
+    },
+    {
+      "name": "\u092e\u094d\u092f\u093e\u0917\u0919",
+      "v1_status": "possibly_cut",
+      "v2_status": "possibly_cut",
+      "route_outside_m": null
+    },
+    {
+      "name": "\u0936\u093f\u0935\u092a\u0941\u0930\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1866.6
+    },
+    {
+      "name": "\u0926\u0941\u092a\u094d\u091a\u0947\u0936\u094d\u0935\u0930",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2032.8
+    },
+    {
+      "name": "\u0924\u093e\u0926\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1983.4
+    },
+    {
+      "name": "\u0938\u0942\u0930\u094d\u092f\u0917\u0922\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1818.5
+    },
+    {
+      "name": "\u0932\u093f\u0916\u0941",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 1784.7
+    },
+    {
+      "name": "\u092a\u091e\u094d\u091a\u0915\u0928\u094d\u092f\u093e",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2252.7
+    },
+    {
+      "name": "\u0915\u0915\u0928\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "unassessed (route crosses unobserved terrain)",
+      "route_outside_m": 2869.3
+    },
+    {
+      "name": "\u092c\u0947\u0932\u0915\u094b\u091f\u0917\u0922\u0940",
+      "v1_status": "still_connected",
+      "v2_status": "connected (route inside analysed area)",
+      "route_outside_m": 0.0
+    }
+  ],
+  "terrain_exposure": {
+    "label": "terrain exposure scenario - NOT observed damage",
+    "definition": "roads, bridges and settlements inside the flood-path corridor AND the valley-floor domain (HAND <= 25 m, slope <= 15 deg)",
+    "roads_km": 1184.2,
+    "bridges": 137,
+    "settlements": 17,
+    "settlement_names": [
+      "\u092c\u0947\u0924\u094d\u0930\u093e\u0935\u0924\u0940",
+      "\u0915\u0941\u0930\u093f\u0928\u091f\u093e\u0930",
+      "\u092e\u0941\u0917\u094d\u0932\u093f\u0919",
+      "\u092d\u0948\u0902\u0938\u0947",
+      "\u092b\u093f\u0938\u094d\u0932\u093f\u0919",
+      "\u092a\u0941\u0930\u093e\u0923\u094b \u092e\u0932\u0947\u0916\u0941",
+      "\u092e\u0948\u0932\u0941\u0919",
+      "settlement@85.0385,27.8507",
+      "settlement@85.0775,27.8601",
+      "settlement@85.0850,27.8579",
+      "\u092c\u093f\u0926\u0941\u0930",
+      "\u0926\u0947\u0935\u0940\u0918\u093e\u091f",
+      "Dhussa",
+      "\u0928\u094c\u0935\u093f\u0938\u0947 \u092b\u093e\u0901\u091f",
+      "\u0926\u093e\u0938\u0922\u0941\u0902\u0917\u093e",
+      "\u0907\u091a\u094d\u091b\u093e\u0915\u093e\u092e\u0928\u093e",
+      "\u092c\u0947\u0928\u0940\u0918\u093e\u091f \u0930\u094b\u0930\u093e\u0919"
+    ]
+  }
+}

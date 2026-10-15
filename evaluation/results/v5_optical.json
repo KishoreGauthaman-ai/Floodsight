@@ -1,0 +1,75 @@
+{
+  "method": {
+    "stack": [
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-22"
+    ],
+    "post": "2026-09-28 (+33 days, 7.9% cloud)",
+    "index": "NDVI from L2A B08/B04 at 10 m; SCL 4/5/6 valid",
+    "threshold_source": "p0.1 of leave-one-out CONTROL z over the non-event pre stack (never EMSR927)",
+    "threshold_z": -21.142,
+    "steep_terrain_included": true
+  },
+  "valid_share_per_scene": {
+    "2026-08-11": 0.219,
+    "2026-08-12": 0.815,
+    "2026-08-22": 0.03,
+    "2026-09-28": 0.274
+  },
+  "stack_and_post_valid_share": 0.154,
+  "scar_km2_total": 0.054,
+  "per_aoi": {
+    "AOI01": {
+      "scar_km2": 0.0,
+      "observable_fraction": 0.48
+    },
+    "AOI02": {
+      "scar_km2": 0.0,
+      "observable_fraction": NaN
+    },
+    "AOI03": {
+      "scar_km2": 0.0,
+      "observable_fraction": NaN
+    },
+    "AOI05": {
+      "scar_km2": 0.0,
+      "observable_fraction": NaN
+    }
+  },
+  "emsr927_post_hoc_check_labelled": {
+    "common_area_km2": 3.458,
+    "reference_km2_in_common": 1.111,
+    "per_tolerance": [
+      {
+        "tolerance_m": 0.0,
+        "our_area_km2": 0.0,
+        "ref_area_km2_common": 1.1108,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "iou": 0.0
+      },
+      {
+        "tolerance_m": 30.0,
+        "our_area_km2": 0.0,
+        "ref_area_km2_common": 1.1108,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "iou": 0.0
+      },
+      {
+        "tolerance_m": 100.0,
+        "our_area_km2": 0.0,
+        "ref_area_km2_common": 1.1108,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "iou": 0.0
+      }
+    ],
+    "n_scar_polygons": 3
+  },
+  "time_box_note": "post-event near-event passes were 40-86% cloud; the first near-clear pass is +33 days, by which time some scars may have vegetated or eroded - reported as-is"
+}

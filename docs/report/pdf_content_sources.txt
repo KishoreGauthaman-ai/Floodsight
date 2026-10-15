@@ -1,0 +1,55 @@
+85 <- provenance.json s1_pairs[0].track.relative_orbit
+ASCENDING <- provenance.json s1_pairs[0].track.orbit_direction
+2026-08-16 <- provenance.json sentinel1_pre.sensing_time
+2026-08-28 <- provenance.json sentinel1_post.sensing_time
+0.5592 <- results.json flood.coverage_fraction
+0 <- results.json flood.area_km2_new_water
+41.9926 <- results.json flood.area_km2_probable_debris
+228 <- damage.json buildings.likely_hit
+3397 <- damage.json buildings.possibly_hit
+107.63 <- damage.json roads.total_length_km
+159 <- damage.json bridges.affected
+1362 <- damage.json bridges.total_in_area
+0 <- cutoff.json likely_cut
+106 <- cutoff.json possibly_cut
+85 <- cutoff.json already_isolated
+NOT YET MEASURED <- detection.json per_track[0].baseline_stats.ratio_threshold_db
+0.63 <- evaluation/results/segmentation_metrics.json model.overall.iou
+0.773 <- evaluation/results/segmentation_metrics.json model.overall.f1
+0.9811 <- evaluation/results/segmentation_metrics.json model.overall.precision
+0.6377 <- evaluation/results/segmentation_metrics.json model.overall.recall
+0.5535 <- evaluation/results/segmentation_metrics.json darkwater_baseline.overall.iou
+0.7126 <- evaluation/results/segmentation_metrics.json darkwater_baseline.overall.f1
+0.8168 <- evaluation/results/segmentation_metrics.json darkwater_baseline.overall.precision
+0.632 <- evaluation/results/segmentation_metrics.json darkwater_baseline.overall.recall
+15 <- checkpoints/metrics.json epochs
+73 <- checkpoints/metrics.json history[0].train_seconds
+1495 <- checkpoints/metrics.json train_samples
+0.3229 <- checkpoints/metrics.json best_val_flood_iou
+85 <- provenance.json s1_pairs[0].track.relative_orbit
+10 <- provenance.json s1_pairs[0].days_before
+2 <- provenance.json s1_pairs[0].days_after
+0.5592 <- results.json flood.coverage_fraction
+0 <- results.json flood.area_km2_new_water
+41.9926 <- results.json flood.area_km2_probable_debris
+228 <- damage.json buildings.likely_hit
+3397 <- damage.json buildings.possibly_hit
+774451 <- damage.json buildings.total_in_area
+107.63 <- damage.json roads.total_length_km
+159 <- damage.json bridges.affected
+1362 <- damage.json bridges.total_in_area
+0 <- cutoff.json likely_cut
+106 <- cutoff.json possibly_cut
+594 <- cutoff.json still_connected_count
+85 <- cutoff.json already_isolated
+87 <- cutoff.json not_analysed_count
+189371 <- results.json flood_path.path_length_m
+58 <- results.json flood_path.n_settlements
+54.2534 <- control-a results.json flood.area_km2_probable_debris
+41.9926 <- results.json flood.area_km2_probable_debris
+0.5592 <- results.json flood.coverage_fraction
+0 <- results.json flood.area_km2_new_water
+100 <- computed: 100 - results.json flood.confidence_summary.valid_pixel_share*100
+85 <- cutoff.json already_isolated
+
+validator: {"ok": false, "ungrounded": ["927", "927", "2024"]}

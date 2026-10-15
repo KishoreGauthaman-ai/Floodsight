@@ -1,0 +1,41 @@
+# --- FloodSight: data, outputs, credentials, weights, reference data ---
+
+# Downloaded data and analysis outputs are never committed
+data/
+runs/
+
+# Credentials
+.env
+
+# Model weights are published as release assets, never committed
+*.pt
+*.pth
+*.ckpt
+
+# EMSR927 reference files: read ONLY by evaluation/, never committed
+evaluation/reference/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Environments / editors / OS ---
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Round 5 final delivery ---
+# Playwright MCP browser artifacts (screenshots/console logs)
+.playwright-mcp/

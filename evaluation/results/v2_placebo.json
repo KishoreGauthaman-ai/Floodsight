@@ -1,0 +1,143 @@
+{
+  "common_area_km2": 41.303,
+  "reference_extent_km2_in_common": 11.681,
+  "reference_prevalence_in_common": 0.2828,
+  "placebo_scores": {
+    "control_a_pre_event_monsoon": {
+      "per_tolerance": [
+        {
+          "tolerance_m": 0.0,
+          "our_area_km2": 0.5825,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.2955,
+          "recall": 0.0147,
+          "f1": 0.0281,
+          "iou": 0.0142
+        },
+        {
+          "tolerance_m": 30.0,
+          "our_area_km2": 0.5825,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.3349,
+          "recall": 0.062,
+          "f1": 0.1046,
+          "iou": 0.0499
+        },
+        {
+          "tolerance_m": 100.0,
+          "our_area_km2": 0.5825,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.4235,
+          "recall": 0.2039,
+          "f1": 0.2753,
+          "iou": 0.1473
+        }
+      ]
+    },
+    "control_b_post_recession_monsoon": {
+      "per_tolerance": [
+        {
+          "tolerance_m": 0.0,
+          "our_area_km2": 1.5392,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.5819,
+          "recall": 0.0767,
+          "f1": 0.1355,
+          "iou": 0.0727
+        },
+        {
+          "tolerance_m": 30.0,
+          "our_area_km2": 1.5392,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.617,
+          "recall": 0.2237,
+          "f1": 0.3284,
+          "iou": 0.1649
+        },
+        {
+          "tolerance_m": 100.0,
+          "our_area_km2": 1.5392,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.6747,
+          "recall": 0.4851,
+          "f1": 0.5644,
+          "iou": 0.2908
+        }
+      ]
+    },
+    "event_old_single_pair_layer": {
+      "per_tolerance": [
+        {
+          "tolerance_m": 0.0,
+          "our_area_km2": 1.5854,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.5114,
+          "recall": 0.0694,
+          "f1": 0.1222,
+          "iou": 0.0651
+        },
+        {
+          "tolerance_m": 30.0,
+          "our_area_km2": 1.5854,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.5618,
+          "recall": 0.225,
+          "f1": 0.3213,
+          "iou": 0.1641
+        },
+        {
+          "tolerance_m": 100.0,
+          "our_area_km2": 1.5854,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.6661,
+          "recall": 0.5339,
+          "f1": 0.5927,
+          "iou": 0.3212
+        }
+      ]
+    },
+    "event_attributed_layer_v2": {
+      "per_tolerance": [
+        {
+          "tolerance_m": 0.0,
+          "our_area_km2": 0.2259,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.659,
+          "recall": 0.0127,
+          "f1": 0.025,
+          "iou": 0.0127
+        },
+        {
+          "tolerance_m": 30.0,
+          "our_area_km2": 0.2259,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.6937,
+          "recall": 0.0933,
+          "f1": 0.1645,
+          "iou": 0.0725
+        },
+        {
+          "tolerance_m": 100.0,
+          "our_area_km2": 0.2259,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.7615,
+          "recall": 0.3427,
+          "f1": 0.4727,
+          "iou": 0.2085
+        }
+      ]
+    }
+  },
+  "random_placement_baseline": {
+    "n_random_placements": 179,
+    "placements_skipped_empty": 10,
+    "tolerance_m": 100.0,
+    "layer_area_km2": 0.2259,
+    "mean_precision": 0.4919,
+    "mean_recall": 0.0171,
+    "mean_f1": 0.0342,
+    "expected_precision_analytic": 0.2828,
+    "note": "random translations of the event-attributed layer inside the common area; the analytic expectation of precision under uniform placement is the reference prevalence"
+  },
+  "reading": "the reference covers 28% of the common area, so ANY layer inside it scores precision near that by chance; agreement must be read as F1 ABOVE the random baseline, not as raw precision/recall. The placebo monsoon layers score like the random baseline (they are not event layers), while the event-attributed layer's precision 0.76 at 100 m is well above the prevalence-driven ~0.28"
+}

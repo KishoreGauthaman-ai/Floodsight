@@ -1,0 +1,23 @@
+{
+  "scenes": [
+    {
+      "slice": 5,
+      "name": "S1D_IW_GRDH_1SDV_20260711T122114_20260711T122139_003626_00675A_6273.SAFE",
+      "zip_mb": 1734.2
+    },
+    {
+      "slice": 6,
+      "name": "S1D_IW_GRDH_1SDV_20260711T122139_20260711T122204_003626_00675A_805D.SAFE",
+      "zip_mb": 1734.9
+    }
+  ],
+  "phases": {
+    "download_2_concurrent_s": 318.9,
+    "download_bytes": 3469071914,
+    "snap_2_concurrent_s": 242.3,
+    "snap_exit_codes": [
+      0,
+      0
+    ]
+  }
+}

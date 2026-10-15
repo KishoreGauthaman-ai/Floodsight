@@ -1,0 +1,17 @@
+{
+  "window": [
+    529,
+    1729,
+    1616,
+    2816
+  ],
+  "inner_margin": 100,
+  "n_compared": 1000000,
+  "pearson_r": 0.6481,
+  "mean_abs_diff_m": 99.86,
+  "p50_abs_diff_m": 23.511,
+  "p95_abs_diff_m": 444.09,
+  "slow_min": 0.0,
+  "fast_min": 0.0,
+  "note": "fast = nearest drainage cell in 2D (distance_transform_edt); slow = along-flow walk to first drainage; interior margin excludes window-edge sinks of the slow variant"
+}

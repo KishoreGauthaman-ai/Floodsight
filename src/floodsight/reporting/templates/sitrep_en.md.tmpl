@@ -1,0 +1,52 @@
+# One-page situation report template (English).
+# Placeholders are filled from the results store ONLY (no LLM, no invented
+# numbers). Rendered by reporting/sitrep.py; every number in the output is
+# checked by reporting/validator.py.
+
+# FloodSight situation report
+## {region_label} - flood date {flood_date}
+
+**Educational prototype - outputs are estimates, not confirmed damage.**
+
+## Summary
+Analysis of Sentinel-1 radar pair (same orbit track {orbit}) and pre-event
+OpenStreetMap (snapshot {osm_snapshot_date}) over the area
+{bbox_label}. New standing flood water detected on the post-event date:
+{flood_area_km2} km2. Probable debris / surface change:
+{debris_area_km2} km2. The maps show the state on the satellite dates, not
+the flood peak.
+
+## Key figures
+- Buildings likely hit: {buildings_likely} (possibly: {buildings_possible})
+  of {buildings_total} mapped in the area
+- Roads inside the flood/debris extent: {roads_km} km
+- Bridges affected: {bridges_affected} of {bridges_total}
+- Settlements likely cut off: {cutoff_likely}; possibly cut: {cutoff_possible};
+  still connected: {cutoff_connected}
+- Settlements already isolated before the event (not flood-related):
+  {cutoff_already}
+
+## Critical infrastructure
+Top affected bridges: {bridges_list}
+
+## Cut-off communities
+{cutoff_names}
+
+## Data sources and dates
+- Sentinel-1 pre-event: {s1_pre} ({s1_pre_date})
+- Sentinel-1 post-event: {s1_post} ({s1_post_date})
+- OSM snapshot: {osm_snapshot_date} (pre-event; rule-enforced)
+- DEM: Copernicus GLO-30
+- Detection method: {method}
+
+## Limitations
+Steep Himalayan terrain causes radar shadow and layover; ~{invalid_share}
+of pixels are unreliable there. OSM coverage in remote areas is incomplete,
+so cut-off results are a lower bound. Flood water may have receded before
+the first usable post-event scene. Nepali output should be reviewed by a
+native speaker before operational use.
+
+Contains modified Copernicus Sentinel data 2026. Produced using Copernicus
+WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH
+2014-2018 provided under COPERNICUS by the European Union and ESA; all
+rights reserved. (c) OpenStreetMap contributors.

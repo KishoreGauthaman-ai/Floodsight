@@ -1,0 +1,53 @@
+{
+  "checkpoint": "/home/ubuntu/Floodsight/src/floodsight/detection/checkpoints/best_model.pt",
+  "checkpoint_val_iou": 0.3229,
+  "test_samples": 720,
+  "test_events": [
+    "MS1_IVH_118_01_20150203",
+    "MS1_IVH_118_02_20150202",
+    "MS1_IVH_130_06_20150913",
+    "MS1_IVH_147_01_20151210",
+    "MS1_IVH_147_02_20151210",
+    "MS1_IVH_147_03_20151210"
+  ],
+  "model": {
+    "overall": {
+      "iou": 0.63,
+      "f1": 0.773,
+      "precision": 0.9811,
+      "recall": 0.6377
+    },
+    "flat_slope<=10deg": {
+      "iou": 0.6308,
+      "f1": 0.7736,
+      "precision": 0.9811,
+      "recall": 0.6386
+    },
+    "steep_slope>10deg": {
+      "iou": 0.0,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  },
+  "darkwater_baseline": {
+    "overall": {
+      "iou": 0.5535,
+      "f1": 0.7126,
+      "precision": 0.8168,
+      "recall": 0.632
+    },
+    "flat_slope<=10deg": {
+      "iou": 0.5718,
+      "f1": 0.7276,
+      "precision": 0.8559,
+      "recall": 0.6327
+    },
+    "steep_slope>10deg": {
+      "iou": 0.0046,
+      "f1": 0.0091,
+      "precision": 0.0047,
+      "recall": 0.1188
+    }
+  }
+}

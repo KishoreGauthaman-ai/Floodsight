@@ -1,0 +1,43 @@
+{
+  "v1_judge_run_included_stack": false,
+  "v1_judge_run_note": "the 23.4-minute v1 judge-box run (D67) was plain fast mode: ONE pre/post pair, no temporal stack",
+  "measured_components": {
+    "download_1_scene_1_73GB_sequential_s": [
+      203,
+      423
+    ],
+    "download_2_concurrent_s": 318.9,
+    "download_parallel_rate_MBps_total": 10.88,
+    "snap_slice5_sequential_s": 60,
+    "snap_slice6_sequential_s": 190,
+    "snap_2_concurrent_q4_each_s": 242.3,
+    "coregistration_slice6_s": 200,
+    "stack_stats_full_slice_per_case_s": 450,
+    "detect_judge_box_s": 17,
+    "damage_cutoff_s": 16
+  },
+  "judge_box_full_attribution_estimate_1_covering_slice": {
+    "downloads_6_scenes_2_concurrent_s": 960,
+    "snap_6_scenes_2_concurrent_s": 750,
+    "alignment_plus_stack_stats_2_cases_s": 1000,
+    "detection_s": 17,
+    "damage_cutoff_s": 16,
+    "total_s": 2743,
+    "total_min": 45.7,
+    "verdict": "EXCEEDS 30 minutes - two modes are defined"
+  },
+  "modes": {
+    "quick_mode": {
+      "definition": "single pre/post pair (v1 pipeline), labelled 'monsoon-baseline change - NOT event-attributed' (control runs showed the single-pair layer fires on every monsoon pair, D54/D66)",
+      "components": "2 downloads (parallel ~5.5 min) + 2 SNAP (~4 min) + coreg (~3 min) + detect/damage/cutoff (~0.5 min)",
+      "estimated_total_min": 14
+    },
+    "full_attribution_mode": {
+      "definition": "5-scene pre-event stack + control-derived threshold (v2 method, D66): event-attributed layer",
+      "components": "6 downloads (parallel ~16 min) + 6 SNAP (~12.5 min) + alignment & stack stats for event and control z (~17 min as the code runs today; windowable to the judge box as a future optimization) + detection (17 s)",
+      "estimated_total_min": 46,
+      "note": "windows-to-box optimization of the stack stats is an identified speedup, NOT claimed as done"
+    }
+  },
+  "source": "evaluation/results/v7_parallel_timing.json (live measurements, 2026-10-14) + t1_stack.log sequential history + D67 judge run"
+}

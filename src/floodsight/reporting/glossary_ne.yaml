@@ -1,0 +1,18 @@
+# Fixed Nepali terminology for the situation report (AGENT.md 8.8).
+# Technical terms keep a stable translation; numbers use Arabic digits so
+# the numeric validator can check them. Reviewed-by-native-speaker note is
+# always printed with Nepali output.
+terms:
+  flood: बाढी
+  settlement: बस्ती
+  cut_off: काटिएको
+  still_connected: जडान भएको
+  already_isolated: पहिले नै एक्लिएको
+  building: भवन
+  bridge: पुल
+  road: सडक
+  debris: मलमस्यान्दा
+  flood_water: बाढी पानी
+  likely: सम्भावित
+  possible: सम्भव
+  educational_prototype: शैक्षिक प्रोटोटाइप

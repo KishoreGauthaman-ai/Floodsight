@@ -1,0 +1,170 @@
+# FloodSight default configuration.
+# All tunable settings live here; the code contains no magic numbers.
+# Every date is YYYY-MM-DD; every bounding box is
+# (lon_min, lat_min, lon_max, lat_max) with longitude first, everywhere.
+
+# ---- Paths ----
+# Relative paths are resolved against the repository root.
+# FLOODSIGHT_DATA_DIR environment variable overrides data_dir.
+data_dir: data
+runs_dir: runs
+
+# ---- Data rules (hackathon constraints, enforced at startup) ----
+osm:
+  # Pre-event OSM data rule: every snapshot used must have a snapshot date
+  # strictly earlier than the flood date, and never later than this cap
+  # (2026-07-27 = latest ohsome extract; brief limit).
+  snapshot_date_cap: "2026-07-27"
+  # Geofabrik region registry (D19/D21): dated snapshots, md5-pinned.
+  # The snapshot_date of the chosen region file is asserted to be strictly
+  # earlier than the flood date at startup.
+  region_default: nepal
+  geofabrik:
+    base_url: https://download.geofabrik.de
+    regions:
+      nepal:
+        path: asia/nepal-260701.osm.pbf
+        snapshot_date: "2026-07-01"   # all edits in this file are on or before this date
+      nepal-2024:
+        # dated snapshot for events before 2026 (e.g. the 2024 Koshi floods);
+        # same rule: snapshot must predate the flood date
+        path: asia/nepal-240101.osm.pbf
+        snapshot_date: "2024-01-01"
+
+# ---- Input validation ----
+validation:
+  # Live-demo safety on limited-RAM machines: warn, then refuse.
+  max_bbox_side_deg: 1.0
+  hard_max_bbox_side_deg: 2.5
+
+# ---- Acquisition ----
+acquisition:
+  cdse:
+    # Verified live in Phase 0 (see DECISIONS.md D1 for the syntax notes).
+    odata_base: https://catalogue.dataspace.copernicus.eu/odata/v1
+    # Token endpoint for authenticated downloads. NOT yet verified with real
+    # credentials (KNOWN_ISSUES K2); Phase 2 will confirm it.
+    auth_token_url: https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token
+    request_timeout_s: 60
+    max_retries: 4
+    retry_backoff_s: 2.0
+    page_size: 1000
+  s1:
+    product_type: IW_GRDH_1S
+    # Search window around the flood date (days before / after).
+    search_window_days_pre: 21
+    search_window_days_post: 14
+    # Mandatory same-track pairing (hackathon radar rule): a pair is valid
+    # only if relative orbit and flight direction match.
+    max_pre_event_days: 21
+    max_post_event_days: 14
+    # Coverage-aware selection (DECISIONS D46): a single pair is used only
+    # when its footprint covers at least this fraction of the bbox;
+    # otherwise every track pair with at least min_track_coverage is
+    # processed separately and their masks unioned per track.
+    min_pair_coverage: 0.9
+    min_track_coverage: 0.05
+  s2:
+    product_type: S2MSI2A
+    search_window_days_pre: 21
+    search_window_days_post: 14
+    # Discard scenes with more cloud cover than this (percent; the
+    # 'cloudCover' product attribute, verified on live products).
+    max_cloud_cover_pct: 80
+  dem:
+    # Copernicus GLO-30 public tiles via the AWS Open Data registry
+    # (verified live, anonymous, COG GeoTIFF; DECISIONS D22). CDSE Process
+    # API GLO-30 access requires CCM registration since 2026-08-25, so this
+    # anonymous bucket is the demo-safe path.
+    provider: aws_open_data
+    bucket_url: https://copernicus-dem-30m.s3.amazonaws.com
+    # 1-degree tiles, e.g. Copernicus_DSM_COG_10_N28_00_E085_00_DEM/...
+    tile_dir_pattern: "Copernicus_DSM_COG_10_{tile}_DEM"
+    tile_file_pattern: "Copernicus_DSM_COG_10_{tile}_DEM.tif"
+    resolution_m: 30
+
+# ---- Preprocessing ----
+preprocessing:
+  s1:
+    # ESA SNAP headless (DECISIONS D28). Override with SNAP_GPT_PATH in .env.
+    snap_gpt_path: /home/ubuntu/snap/bin/gpt
+    snap_parallelism: 4
+    pixel_spacing_m: 10.0
+    speckle_filter: lee
+    speckle_window: 3
+    # Decibel conversion clip range (natural backscatter outside this is nodata).
+    db_min: -35.0
+    db_max: 10.0
+  dem:
+    # Physically impossible flood pixels: steeper slopes and higher HAND.
+    slope_max_deg: 30.0
+    hand_max_m: 15.0
+
+# ---- Detection ----
+detection:
+  tile_size: 512
+  tile_overlap: 64
+  baseline:
+    # Log-ratio change detection; "auto" = Otsu threshold on the ratio image.
+    threshold: auto
+    # A pixel is water-like when its post-event VV backscatter (dB) is below
+    # this; and was NOT water when pre-event VV is below it (permanent-water
+    # subtraction). Tunable for the case study; documented in the report.
+    dark_water_db: -17.0
+    otsu_bins: 256
+    min_blob_pixels: 20
+  debris:
+    # Probable debris / change (evidence layer, never a trained class):
+    # persistent brightening above this dB change, on land, on the valley
+    # floor. Grounded in the real Trishuli pair evidence (near-river
+    # brightening 9.3% vs 3.6% far; DECISIONS D32).
+    bright_change_db: 3.0
+    # Valley-floor proxy: within this distance of a mapped waterway from
+    # the same dated OSM snapshot (HAND not yet implemented, K13).
+    max_river_distance_m: 1000.0
+    confidence_scale_db: 3.0
+  confidence:
+    # Confidence tiers for damage and cut-off reporting.
+    likely_min: 0.6
+    possible_min: 0.3
+  # Baseline confidence = (ratio - threshold) / scale, clipped to [0, 1].
+  confidence_change_scale_db: 3.0
+
+# ---- Cut-off analysis ----
+cutoff:
+  # Maximum distance to snap a settlement to the road graph; farther
+  # settlements are reported as "no road mapped", never as cut off.
+  settlement_snap_max_m: 2000
+  # OSM tags that count as destinations (towns / hospitals / clinics).
+  destination_tags:
+    place: [town, city]
+    amenity: [hospital, clinic]
+  # Road classes (highway tag values) included in the routable graph.
+  routable_highway: [motorway, trunk, primary, secondary, tertiary, unclassified, residential, road, living_street, service, track]
+
+# ---- Damage assessment ----
+damage:
+  # A bridge is "affected" when new flood/debris touches the bridge itself
+  # OR either approach end within this buffer (meters, local UTM).
+  bridge_approach_buffer_m: 50.0
+
+# ---- Flood path (bonus) ----
+flood_path:
+  # Drainage line definition: D8 accumulation at or above this many cells.
+  drainage_acc_threshold: 500.0
+  # Corridor buffer = base + k * log10(accumulation); wider valleys
+  # further downstream get a wider corridor.
+  base_buffer_m: 300.0
+  buffer_per_log_acc_m: 120.0
+
+# ---- Modes ----
+# fast: radar + trained model/baseline, damage, cut-off.
+# full: adds optical confirmation, debris layer, flood path.
+mode_default: fast
+
+judge:
+  # Judge mode (Round 4 T7): live-demo area budget. The CLI refuses
+  # areas larger than this BEFORE any download starts. A 20x20 km box
+  # is ~400 km2; the demo timing target is measured on the OSM-derived
+  # judge box [84.9041, 27.8035, 85.1105, 27.9869] (see DECISIONS D63).
+  max_area_km2: 500.0

@@ -1,0 +1,27 @@
+# Conda environment for FloodSight (GDAL-friendly alternative to pip).
+# NOTE (DECISIONS.md D3): the development machine has no conda; this file is
+# provided for users who prefer conda. The pip path in requirements.txt is
+# the one that has been install-tested.
+name: floodsight
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10,<3.12
+  - pip
+  # Geospatial stack (conda-managed GDAL)
+  - gdal>=3.7
+  - rasterio>=1.3
+  - geopandas>=0.14
+  - shapely>=2.0
+  - pyproj>=3.6
+  - numpy>=1.24
+  - scipy>=1.11
+  - networkx>=3.2
+  - matplotlib>=3.8
+  - pip:
+      - pyyaml>=6.0
+      - requests>=2.31
+      - python-dotenv>=1.0
+      - streamlit>=1.30
+      - folium>=0.15
+      - pytest>=7.4

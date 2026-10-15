@@ -1,0 +1,34 @@
+# Training configuration for the flood segmentation U-Net.
+#
+# NOTE: these settings cannot be finalized until Kuro Siwo is downloaded and
+# its real file layout, bands and label classes have been inspected on disk
+# (AGENT.md 8.3, KNOWN_ISSUES K3). Keys marked null are placeholders that the
+# training scripts must validate before use; they are NOT defaults to invent.
+
+model:
+  architecture: unet
+  encoder: resnet18           # pretrained encoder family
+  encoder_weights: imagenet
+  # Input channel order. Must match the inference stack exactly; finalized
+  # after Kuro Siwo inspection.
+  channels: null
+  num_classes: null           # e.g. dry / permanent water / flood water
+  # Channel statistics (mean, std per channel). Computed from the training
+  # data and stored with the checkpoint; never guessed.
+  channel_stats: null
+
+training:
+  batch_size: null
+  epochs: null
+  learning_rate: null
+  loss: focal_dice             # combined focal + Dice (class imbalance)
+  augmentation: [hflip, vflip, rotate90, speckle_noise]
+  seed: 42                     # recorded for reproducibility
+  device: auto                  # auto = CUDA if available, else CPU
+
+splits:
+  # Splits are by whole event and region, never random tiles (AGENT.md 8.3).
+  # The exact event lists are written by training/prepare_kurosiwo.py after
+  # dataset inspection, to a manifest file, not hardcoded here.
+  manifest: data/training/splits_manifest.json
+  held_out_test_events: null

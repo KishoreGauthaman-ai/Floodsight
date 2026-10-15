@@ -1,0 +1,246 @@
+{
+  "ran_against_frozen_state": "D69 hashes",
+  "aoi_inventory": {
+    "AOI01": {
+      "product": "EMSR927_AOI01_GRA_PRODUCT_v1",
+      "observedEventA_types": {
+        "6-Mass Movement": 1
+      },
+      "observedEventA_total_km2": 1.111,
+      "builtUpP_damage": {
+        "Destroyed": 323,
+        "Possibly damaged": 78,
+        "Damaged": 32
+      },
+      "transportationL_damage": {
+        "Destroyed": 14,
+        "No visible damage": 11,
+        "Possibly damaged": 6
+      },
+      "aoi_km2": 3.458,
+      "common_area_km2": 0.988
+    },
+    "AOI02": {
+      "product": "EMSR927_AOI02_GRA_PRODUCT_v2",
+      "observedEventA_types": {
+        "6-Mass Movement": 1
+      },
+      "observedEventA_total_km2": 1.294,
+      "builtUpP_damage": {
+        "Destroyed": 372,
+        "Damaged": 33,
+        "Possibly damaged": 26
+      },
+      "transportationL_damage": {
+        "Destroyed": 14,
+        "Possibly damaged": 1
+      },
+      "aoi_km2": 2.97,
+      "common_area_km2": 0.965
+    },
+    "AOI03": {
+      "product": "EMSR927_AOI03_GRA_PRODUCT_v1",
+      "observedEventA_types": {
+        "6-Mass Movement": 2
+      },
+      "observedEventA_total_km2": 5.891,
+      "builtUpP_damage": {
+        "Destroyed": 1826,
+        "Possibly damaged": 297,
+        "Damaged": 220
+      },
+      "transportationL_damage": {
+        "No visible damage": 275,
+        "Destroyed": 206,
+        "Possibly damaged": 102,
+        "Not Analysed": 30
+      },
+      "aoi_km2": 20.96,
+      "common_area_km2": 18.826
+    },
+    "AOI05": {
+      "product": "EMSR927_AOI05_GRA_PRODUCT_v3",
+      "observedEventA_types": {
+        "6-Mass Movement": 20
+      },
+      "observedEventA_total_km2": 4.793,
+      "builtUpP_damage": {
+        "Destroyed": 292,
+        "Possibly damaged": 248,
+        "Damaged": 69
+      },
+      "transportationL_damage": {
+        "No visible damage": 258,
+        "Not Analysed": 115,
+        "Destroyed": 115,
+        "Possibly damaged": 14,
+        "Damaged": 13
+      },
+      "aoi_km2": 23.93,
+      "common_area_km2": 20.524
+    }
+  },
+  "common_area_km2": 41.303,
+  "extent_metrics": {
+    "event_attributed_debris": {
+      "per_tolerance": [
+        {
+          "tolerance_m": 0.0,
+          "our_area_km2": 0.2259,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.659,
+          "recall": 0.0127,
+          "f1": 0.025,
+          "iou": 0.0127
+        },
+        {
+          "tolerance_m": 30.0,
+          "our_area_km2": 0.2259,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.6937,
+          "recall": 0.0933,
+          "f1": 0.1645,
+          "iou": 0.0725
+        },
+        {
+          "tolerance_m": 100.0,
+          "our_area_km2": 0.2259,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.7615,
+          "recall": 0.3427,
+          "f1": 0.4727,
+          "iou": 0.2085
+        }
+      ]
+    },
+    "old_monsoon_change_layer": {
+      "per_tolerance": [
+        {
+          "tolerance_m": 0.0,
+          "our_area_km2": 1.5854,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.5114,
+          "recall": 0.0694,
+          "f1": 0.1222,
+          "iou": 0.0651
+        },
+        {
+          "tolerance_m": 30.0,
+          "our_area_km2": 1.5854,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.5618,
+          "recall": 0.225,
+          "f1": 0.3213,
+          "iou": 0.1641
+        },
+        {
+          "tolerance_m": 100.0,
+          "our_area_km2": 1.5854,
+          "ref_area_km2_common": 11.6811,
+          "precision": 0.6661,
+          "recall": 0.5339,
+          "f1": 0.5927,
+          "iou": 0.3212
+        }
+      ]
+    }
+  },
+  "building_agreement": {
+    "event_attributed_debris": {
+      "reference_damaged_points_in_common": 3807,
+      "matched_by_our_layer": 9,
+      "recall_of_damaged_points": 0.0024
+    },
+    "old_monsoon_change_layer": {
+      "reference_damaged_points_in_common": 3807,
+      "matched_by_our_layer": 28,
+      "recall_of_damaged_points": 0.0074
+    }
+  },
+  "building_confusion_matrix": {
+    "event_attributed_debris": {
+      "Damaged | our_layer_miss": 354,
+      "Destroyed | our_layer_hit": 6,
+      "Destroyed | our_layer_miss": 2800,
+      "Possibly damaged | our_layer_hit": 3,
+      "Possibly damaged | our_layer_miss": 644
+    },
+    "old_monsoon_change_layer": {
+      "Damaged | our_layer_hit": 1,
+      "Damaged | our_layer_miss": 353,
+      "Destroyed | our_layer_hit": 2,
+      "Destroyed | our_layer_miss": 2804,
+      "Possibly damaged | our_layer_hit": 1,
+      "Possibly damaged | our_layer_miss": 646
+    }
+  },
+  "road_agreement": {
+    "event_attributed_debris": {
+      "reference_damaged_lines": 485,
+      "intersecting_our_layer": 21
+    },
+    "old_monsoon_change_layer": {
+      "reference_damaged_lines": 485,
+      "intersecting_our_layer": 58
+    }
+  },
+  "five_largest_misses": [
+    {
+      "area_km2": 1.0411,
+      "centroid_lon": 85.14374,
+      "centroid_lat": 27.92045
+    },
+    {
+      "area_km2": 1.0108,
+      "centroid_lon": 85.06624,
+      "centroid_lat": 27.85629
+    },
+    {
+      "area_km2": 0.5609,
+      "centroid_lon": 85.09056,
+      "centroid_lat": 27.85893
+    },
+    {
+      "area_km2": 0.4938,
+      "centroid_lon": 85.15905,
+      "centroid_lat": 27.94164
+    },
+    {
+      "area_km2": 0.368,
+      "centroid_lon": 85.37587,
+      "centroid_lat": 28.26943
+    }
+  ],
+  "five_largest_false_alarms": [
+    {
+      "area_km2": 0.0072,
+      "centroid_lon": 85.04719,
+      "centroid_lat": 27.85361
+    },
+    {
+      "area_km2": 0.0033,
+      "centroid_lon": 85.1815,
+      "centroid_lat": 27.98884
+    },
+    {
+      "area_km2": 0.0031,
+      "centroid_lon": 85.04475,
+      "centroid_lat": 27.85343
+    },
+    {
+      "area_km2": 0.0023,
+      "centroid_lon": 85.15488,
+      "centroid_lat": 27.93984
+    },
+    {
+      "area_km2": 0.0023,
+      "centroid_lon": 85.1349,
+      "centroid_lat": 27.90157
+    }
+  ],
+  "date_gap": {
+    "our_post_scene": "2026-08-28T12:21 (Sentinel-1 track 85, 62 h after the 2026-08-25T22:00 event time)",
+    "reference_note": "the GRA products are first-delivery maps and the MONIT01 products are later monitoring passes (activation last update 2026-09-10); exact reference image dates are printed on the map PDFs",
+    "effect": "a flash flood drains within hours, so standing water on the +62 h scene is expected to be gone; the reference mass-movement deposits persist, which is why the comparison layer is debris/change, not water"
+  }
+}

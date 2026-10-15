@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "floodsight"
+version = "0.1.0"
+description = "Satellite flood intelligence for rescue teams: flood extent, damage estimates and cut-off settlements from Sentinel data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "TBD" }
+dependencies = [
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "numpy>=1.24",
+    "rasterio>=1.3",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "geopandas>=0.14",
+]
+
+[project.optional-dependencies]
+training = [
+    "torch>=2.1",
+    "torchvision>=0.16",
+]
+dashboard = [
+    "streamlit>=1.30",
+    "folium>=0.15",
+    "matplotlib>=3.8",
+    "mapclassify>=2.6",
+]
+graph = [
+    "networkx>=3.2",
+    "scipy>=1.11",
+]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.4",
+    "black>=24.0",
+]
+
+[project.scripts]
+floodsight = "floodsight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+floodsight = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -m 'not network'"
+markers = [
+    "network: live integration tests that need internet and write data/ (opt-in: pytest -m network)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint.per-file-ignores]
+# Parsing "YYYY-MM-DD" into a naive date is timezone-free by design.
+"src/floodsight/config.py" = ["DTZ005", "DTZ007"]
+"scripts/controls/*" = ["EXE002", "BLE001"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]

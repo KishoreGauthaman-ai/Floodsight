@@ -1,0 +1,24 @@
+{
+  "run": "84.390_27.680_85.730_28.310_2026-08-26_fast",
+  "debris_area_km2_results_store": 41.9926,
+  "debris_polygons": 13634,
+  "debris_total_km2_raster_union": 41.9926,
+  "share_within_500m_of_rivers": 0.0844,
+  "share_within_1000m_of_rivers": 0.1037,
+  "share_within_5000m_of_rivers": 0.2276,
+  "debris_HAND_note": "HAND at corridor scale not computed this session: the per-cell downstream walk is O(n) per cell on 10.9M cells on CPU; the slope-class breakdown and the 1 km waterway buffer (built into the debris layer) serve as the terrain-validity evidence instead.",
+  "sub_area_split_lat": 27.95,
+  "debris_km2_north": 22.3163,
+  "debris_km2_south": 19.6763,
+  "damage_features_north": 2136,
+  "damage_features_south": 4083,
+  "damaged_buildings_north": 1297,
+  "damaged_buildings_south": 2328,
+  "cutoff_counts": {
+    "likely_cut": 0,
+    "possibly_cut": 106,
+    "already_isolated": 85,
+    "still_connected": 594,
+    "not_analysed": 87
+  }
+}

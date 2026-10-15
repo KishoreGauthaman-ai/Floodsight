@@ -1,0 +1,41 @@
+{
+  "method": {
+    "stack_dates": [
+      "2026-06-29",
+      "2026-07-11",
+      "2026-07-23",
+      "2026-08-04",
+      "2026-08-16"
+    ],
+    "event_post": "2026-08-28",
+    "control": "post=2026-08-16 vs stack of 4 earlier scenes",
+    "band": "VV dB",
+    "mad_floor_db": 1.0,
+    "threshold_source": "p99.9 of control z over the valid valley-floor domain (never from EMSR927)",
+    "z_threshold": 4.679,
+    "valley_floor": {
+      "hand_max_m": 25.0,
+      "slope_max_deg": 15.0,
+      "main_stem_buffer_m": 2000.0,
+      "main_stem_pattern": "trishuli|trisuli|bhot[e ]?koshi|langtang"
+    }
+  },
+  "valid_fraction_of_bbox": 0.9986,
+  "valley_domain_km2": 96.464,
+  "event_attributed_km2": 0.455,
+  "control_area_km2": 0.097,
+  "event_control_ratio": 4.71,
+  "attributable": true,
+  "old_debris_layer": {
+    "total_km2": 41.993,
+    "inside_valley_domain_km2": 2.991,
+    "overlapping_event_layer_km2": 0.403,
+    "other_ground_change_km2": 41.59
+  },
+  "control_z_stats": {
+    "p50": -0.05,
+    "p90": 1.55,
+    "p99": 3.09,
+    "n": 964638
+  }
+}

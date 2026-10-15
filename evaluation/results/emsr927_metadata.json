@@ -1,0 +1,19 @@
+{
+  "downloaded": "2026-10-14T07:19Z",
+  "source": "public endpoint rapidmapping.emergency.copernicus.eu/backend/dashboard-api/public-activations/?code=EMSR927 -> productsPath (no login required)",
+  "activation": {"code": "EMSR927", "name": "Flood in Nepal", "eventTime": "2026-08-25T22:00:00", "activationTime": "2026-08-26T09:53:00", "n_aois": 6, "n_products": 6, "closed": true, "sensitive": false},
+  "note": "read METADATA ONLY before the freeze (Round 4 T8a); no flood-extent analysis until after FROZEN",
+  "products": [
+    {"name": "EMSR927_AOI01_GRA_PRODUCT_v1", "aoi_bounds_4326": [85.323, 28.149, 85.348, 28.188]},
+    {"name": "EMSR927_AOI02_GRA_PRODUCT_v2", "aoi_bounds_4326": [85.357, 28.242, 85.381, 28.280]},
+    {"name": "EMSR927_AOI03_GRA_PRODUCT_v1", "aoi_bounds_4326": [85.099, 27.857, 85.193, 28.009]},
+    {"name": "EMSR927_AOI03_GRA_MONIT01_v1", "aoi_bounds_4326": [85.099, 27.857, 85.193, 28.009]},
+    {"name": "EMSR927_AOI05_GRA_PRODUCT_v3", "aoi_bounds_4326": [84.941, 27.793, 85.109, 27.867]},
+    {"name": "EMSR927_AOI05_GRA_MONIT01_v2", "aoi_bounds_4326": [84.941, 27.793, 85.109, 27.867]}
+  ],
+  "all_aois_inside_approved_bbox": true,
+  "layers_per_gra_product": ["areaOfInterestA", "builtUpP", "facilitiesA", "facilitiesL", "imageFootprintA", "notAnalysedA", "observedEventA", "transportationA", "transportationL", "transportationP"],
+  "flood_extent_layer": "observedEventA (event_type includes flood and mass movement)",
+  "damage_layer": "builtUpP (damage grade points)",
+  "vector_crs": "EPSG:4326"
+}

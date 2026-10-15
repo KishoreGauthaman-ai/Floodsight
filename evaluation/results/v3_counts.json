@@ -1,0 +1,243 @@
+{
+  "definitions_and_counts": {
+    "A_damage_tiers_geometry_intersects": {
+      "definition": "building footprint INTERSECTS a dissolved tier polygon; likely tier = confidence >= 0.6 (v2 map: 0.8 = control p99.99), possible = 0.3-0.6 (v2 map: 0.5 = control p99.9)",
+      "likely": 8,
+      "possible": 74,
+      "total_touching": 82
+    },
+    "B_centroid_in_union": {
+      "definition": "building CENTROID falls inside the union of all event-attributed polygons (the headline 'hit' count in t5_recompute.json)",
+      "hit": 30
+    },
+    "C_geometry_intersects_union": {
+      "definition": "building footprint touches the union, no tier split - the same spatial test as A, pooled",
+      "hit": 82
+    },
+    "difference_explanation": "52 buildings clip an event-attributed polygon with an edge of their footprint without their centroid being inside; the headline count uses the stricter centroid definition to avoid boundary noise"
+  },
+  "bridges_flagged_by_event_layer": {
+    "n": 19,
+    "class_split": {
+      "vehicle bridge": 10,
+      "footbridge": 8,
+      "other (nan)": 1
+    },
+    "tier_split": {
+      "possible": 19
+    },
+    "median_distance_to_main_stem_m": 0.0,
+    "list": [
+      {
+        "osm_id": 83925838,
+        "name": NaN,
+        "highway": "path",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 85.34373,
+        "lat": 28.1635,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 140332471,
+        "name": "Khahare Bridge",
+        "highway": "trunk",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.46432,
+        "lat": 27.77261,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 140332488,
+        "name": "Pokhare khola",
+        "highway": "trunk",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.91674,
+        "lat": 27.79989,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 246173464,
+        "name": NaN,
+        "highway": NaN,
+        "bridge": "aqueduct",
+        "class": "other (nan)",
+        "lon": 85.16388,
+        "lat": 27.95566,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 302582602,
+        "name": NaN,
+        "highway": "unclassified",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.4655,
+        "lat": 27.82337,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 302726220,
+        "name": NaN,
+        "highway": "footway",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 84.632,
+        "lat": 27.86931,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 303036281,
+        "name": NaN,
+        "highway": "path",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 85.1081,
+        "lat": 27.86052,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 340474167,
+        "name": NaN,
+        "highway": "path",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 85.18359,
+        "lat": 28.009,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 340856784,
+        "name": "Keurintar Hanging Bridge",
+        "highway": "footway",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 84.96185,
+        "lat": 27.81652,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 341174340,
+        "name": NaN,
+        "highway": "unclassified",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 85.16356,
+        "lat": 27.95631,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 341226737,
+        "name": NaN,
+        "highway": "path",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 84.80925,
+        "lat": 27.81711,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 341705735,
+        "name": NaN,
+        "highway": "path",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 85.18138,
+        "lat": 27.97903,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 343303369,
+        "name": NaN,
+        "highway": "path",
+        "bridge": "yes",
+        "class": "footbridge",
+        "lon": 85.17979,
+        "lat": 27.98184,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 400000901,
+        "name": "Pasang Lhamu Highway",
+        "highway": "primary",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 85.06669,
+        "lat": 27.85308,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 1266664498,
+        "name": NaN,
+        "highway": "unclassified",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.99046,
+        "lat": 27.80426,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 1426817363,
+        "name": "Khahare Bridge",
+        "highway": "trunk",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.46444,
+        "lat": 27.77273,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 1432603259,
+        "name": NaN,
+        "highway": "unclassified",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.96529,
+        "lat": 27.81192,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 1484945153,
+        "name": NaN,
+        "highway": "service",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.74987,
+        "lat": 27.80513,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      },
+      {
+        "osm_id": 1485331752,
+        "name": "Pokhare khola",
+        "highway": "trunk",
+        "bridge": "yes",
+        "class": "vehicle bridge",
+        "lon": 84.91679,
+        "lat": 27.79999,
+        "overlap_m": 0.0,
+        "tier": "possible"
+      }
+    ],
+    "flagging_note": "all 19 bridges are flagged via the 50 m approach-buffer rule of analysis/damage.py (bridge approaches hit the layer); direct bridge-line overlap with the event layer is 0 m for every flagged bridge - no bridge structure is observed damaged, its access is observed changed"
+  }
+}
