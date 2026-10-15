@@ -384,7 +384,9 @@ def render_map(run_dir: Path, results: dict):
 
     # fit the frame to the analysed data, not a fixed zoom
     m.fit_bounds([[bbox[1], bbox[0]], [bbox[3], bbox[2]]])
-    folium.LayerControl(collapsed=False, position="topleft").add_to(m)
+    # collapsed: the layer list stays a small button until pressed
+    # (the expanded panel hung over half the map - verified fix)
+    folium.LayerControl(collapsed=True, position="topleft").add_to(m)
     return m
 
 
