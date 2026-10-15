@@ -31,7 +31,7 @@ This is an educational prototype, not an operational tool.
 
 ## 2. Problem and approach
 
-A glacier-collapse flood destroyed roads, bridges and communications
+A glacier-collapse flood cut roads, bridges and communications
 within hours. Rescue coordinators needed answers with no ground data.
 Radar sees through monsoon cloud; optical mostly does not - Sentinel-2
 was evaluated and stopped (joint cloud-free observability 15.4 percent).
@@ -60,9 +60,18 @@ ever happens.
 
 ## 4. Method
 
-Radar preprocessing runs ESA SNAP headless per scene and co-registers
-same-slice pairs; multi-slice passes are unioned on a common grid with
-per-track attribution. Detection has four streams:
+The pipeline is deterministic and resumable: every stage caches by
+key, a failed stage stops the run visibly and dependent stages are
+skipped with written reasons, and no stage ever fabricates a number -
+unknowns are null and the results store is schema-validated on both
+write and read. Radar preprocessing runs ESA SNAP headless per scene
+(orbit correction, thermal-noise removal, calibration to sigma-zero,
+Lee speckle filtering, 10 m terrain correction against GLO-30) and
+co-registers same-slice pairs; multi-slice passes are unioned on a
+common grid with per-track attribution, and 43.85 percent of the
+corridor is masked as radar-unreliable (slope above 30 degrees, plus
+layover and shadow) with every statistic clipped to the analysed area.
+Detection has four streams:
 
 - A trained U-Net (ResNet-18 encoder) and a log-ratio Otsu baseline
   detect flood water per co-registered pair.
@@ -144,9 +153,27 @@ flood-path valley corridor.
 | Control (b) | 09-05 to 09-17, track 19 | 30.87 |
 | Control (c) | 2026-10-12 | no valid same-track pair (honest refusal) |
 
-The single-pair layer fires on every monsoon date. The temporal-stack
-method, thresholded by controls only: leave-one-out controls 0.116-0.200
-km2; independent pair (post 08-04) 0.148 km2; event 0.4545 km2.
+The single-pair layer fires on every monsoon date, so it is retained
+only as a labelled baseline. The temporal-stack attribution is
+thresholded by controls only, and its circularity is stated openly: the
+v1 control area equals 0.1 percent of the domain by construction of a
+p99.9 threshold, so the ratio - not the raw control area - is the
+decision quantity. Leave-one-out controls (each pre-event scene removed
+in turn) give 0.116-0.200 km2: the null is stable and no single scene
+drives it. An independent pre-event pair (stack 06-29/07-11/07-23,
+post 08-04) gives 0.148 km2 at the same fixed threshold. The event
+shows 0.4545 km2 - the same cutoff, 4.69 and 3.07 times the two
+controls.
+
+### 7.4 What the attribution layer is and is not
+
+The layer answers "where did bright valley-floor change attributable to
+the event occur", not "where is every landslide". It is restricted to
+the main-stem valley floor (HAND <= 25 m, slope <= 15 deg) because the
+threshold was derived on that domain; steep hillslope failures are
+outside the radar-reliable area by design. Its 712 polygons are
+reported with two control-derived tiers: possible (z >= p99.9) and
+likely (z >= p99.99, 0.027 km2).
 
 [CHART: bar | Event vs control change area at fixed threshold | km2 | event=0.455; control_a=0.097; control_d=0.148; loo_max=0.200]
 
@@ -181,16 +208,33 @@ comparison ran once against the frozen state; no tuning followed.
 
 ## 8. Generality, speed and judge mode
 
+### 8.1 Measured runtimes
+
 A fresh judge-box run (415 km2, single pair, downloads included)
 completed in 23.4 minutes: downloads plus co-registration 22.8 min,
 detection 17 s, damage 11 s, cut-off 5 s. With parallel downloads
-(10.88 MB/s measured) and parallel SNAP, **quick mode is about 14
-minutes** and is labelled monsoon-baseline change, NOT
-event-attributed. **Full attribution mode needs the five-scene stack
-and takes about 46 minutes** - it exceeds 30 minutes and is defined as
-a separate mode. The CLI refuses areas above 500 km2 in judge mode
-before any download. Sentinel-2 optical scar detection was evaluated on
-real scenes and stopped: joint observability 15.4 percent.
+(318.9 s for two 1.73 GB products, 10.88 MB/s total) and parallel SNAP
+(242.3 s for two scenes), **quick mode is about 14 minutes** and is
+labelled monsoon-baseline change, NOT event-attributed. **Full
+attribution mode needs the five-scene pre-event stack and takes about
+46 minutes** - it exceeds 30 minutes and is defined as a separate mode
+rather than hidden. The corridor case study (9,237 km2, four SNAP
+scenes, 92M-pixel detection) took about 104 minutes. A GPU would not
+have shortened these runs materially: the wall time is network and
+SNAP I/O, and model inference is 17 s on CPU. The CLI refuses areas
+above 500 km2 in judge mode before any download starts.
+
+### 8.2 Generality
+
+The system ran end to end on a second region (Koshi corridor, 2024
+date) during rehearsal, and the current-date control exercised the
+designed honest refusal when no same-track pair exists. Cached pairs
+re-open in minutes: scene downloads and SNAP are skipped when the
+pair folder already holds the terrain-corrected rasters and the
+co-registration. Sentinel-2 optical scar detection was evaluated on
+real scenes for this event and stopped: joint cloud-free observability
+15.4 percent, so no optical number appears anywhere in the case-study
+results.
 
 [FIGURE: fig3.png | The FloodSight dashboard at 1920x1080: satellite basemap, event-attributed layer, quality badges and the v2 unassessed panel]
 
@@ -211,9 +255,15 @@ real scenes and stopped: joint observability 15.4 percent.
   the classical baseline there.
 - No held-out training event is mountainous; Himalayan generalisation
   is unproven.
-- Sentinel-2 could not be used (cloud); optical scars were stopped.
+- Sentinel-2 could not be used (cloud); the optical scar path was
+  built, measured and stopped: joint observability 15.4 percent, the
+  non-event NDVI null at z=-21 from cloud-edge noise, zero scars in
+  the reference AOIs.
 - The exposure scenario is hazard-corridor exposure, not observed
-  damage.
+  damage, and must never be read as a damage count.
+- Scene revisit is days: the system cannot warn of a glacier collapse
+  minutes ahead, and a flash flood may drain before the first usable
+  post-event scene - exactly what happened here.
 
 ## 10. Responsible use
 

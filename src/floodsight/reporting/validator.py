@@ -39,6 +39,11 @@ def collect_store_numbers(results: dict[str, Any]) -> set[str]:
             for v in node.values():
                 walk(v)
         elif isinstance(node, list):
+            # a stored list's LENGTH is a grounded number by definition:
+            # counts rendered from len(<stored list>) must not be rejected
+            # (verified failure: the judge-box sitrep's "already isolated:
+            # 25" was refused although 25 == len(results cutoff list))
+            found.add(_normalize(len(node)))
             for v in node:
                 walk(v)
 
