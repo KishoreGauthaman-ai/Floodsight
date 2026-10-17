@@ -39,17 +39,18 @@ flood hit, what was damaged, who is cut off.**
 
 ## Quick start for judges
 
-###USE THIS LINK INSTEAD TO SEE VIEW THE DASHBOARD:
+### USE THIS LINK INSTEAD TO SEE VIEW THE DASHBOARD:
 ```bash
 https://reward-government-constitution-word.trycloudflare.com/ 
 
 ```
+### OR 
 
 ```bash
 ./run.sh
 ```
 
-##OR
+### OR
 
 ```bash
 # quick mode: ONE pre/post radar pair, ~14 min on a small box,
