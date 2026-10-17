@@ -40,9 +40,10 @@ flood hit, what was damaged, who is cut off.**
 ## Quick start for judges
 
 ### USE THIS LINK INSTEAD TO SEE VIEW THE DASHBOARD:
-```bash
-https://reward-government-constitution-word.trycloudflare.com/ 
 
+it would take 2 mins to load the website..!!
+```bash
+https://sanyo-terrorist-fax-august.trycloudflare.com
 ```
 ### OR 
 
