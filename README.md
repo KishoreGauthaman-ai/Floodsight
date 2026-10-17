@@ -45,6 +45,8 @@ it would take 2 mins to load the website..!!
 ```bash
 https://sanyo-terrorist-fax-august.trycloudflare.com
 ```
+You can download the result.json or the run file as .zip file there...
+
 ### OR 
 
 ```bash
