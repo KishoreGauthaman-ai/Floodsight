@@ -38,6 +38,13 @@ flood hit, what was damaged, who is cut off.**
 | Held-out model IoU | 0.63 (test) / 0.37 (validation) | validation is worse than the classical baseline there; the kept checkpoint's test score is an optimistic selection |
 
 ## Quick start for judges
+
+###USE THIS LINK INSTEAD TO SEE VIEW THE DASHBOARD:
+```bash
+https://reward-government-constitution-word.trycloudflare.com/ 
+
+```
+
 ```bash
 ./run.sh
 ```
